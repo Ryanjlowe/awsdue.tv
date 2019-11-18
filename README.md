@@ -24,6 +24,8 @@ git submodule init
 git submodule update --checkout --recursive
 ```
 
+hardcoding theme in so the above is not required
+
 #### Install node packages:
 
 `npm install`
@@ -33,6 +35,12 @@ git submodule update --checkout --recursive
 `npm run server`
 or
 `npm run test` to see stubbed in draft pages.
+
+
+or 
+
+`hugo serve -D`
+
 
 #### View Hugo locally:
 Visit http://localhost:1313/ to see the site.
