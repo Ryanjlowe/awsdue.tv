@@ -1,0 +1,17 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "Amazon Pinpoint Workshop"
+theme = "learn"
+
+[params]
+  AuthorName = "Daniel Geske"
+  GitHubUser = "btx94"
+  SidebarRecentLimit = 5
+  Subtitle = "Multichannel customer engagement using Amazon Pinpoint"
+  themeVariant = "mine"
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-twitter fa-lg'></i> @btx94"
+identifier = "tw"
+url = "https://twitter.com/intent/user?screen_name=btx94"
+weight = 1
