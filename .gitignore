@@ -70,4 +70,4 @@ build/
 dist/
 node_modules/
 aws-exports.js
-awsconfiguration.json
+awsconfiguration.json.DS_Store
