@@ -1,5 +1,5 @@
 +++
-title = "Create new project"
+title = "Pinpoint Setup"
 chapter = false
 weight = 20
 +++
@@ -8,12 +8,7 @@ weight = 20
 - [ ] fix region in urls
 - [ ] sandbox info
 - [ ] should we educate on endpoint limits
-
-![Amazon Pinpoint Icon](/images/amazon-pinpoint-icon.png)
-This workshop has two labs in it. The first lab covers creating a campaign and Journey within Amazon Pinpoint, whilst the second part covers embedding the Analytics API into your application to understand user behaviours and create dynamic segments. 
-
-The second lab requires you to have completed lab 1.
-
+- [ ] Test SMS image
 
 ## Step 1: Create Pinpoint Project
 
@@ -51,59 +46,3 @@ In the menu bar on the left hand side click on `Test Messaging`.
 4. Click send message.
 
 
-## Creating a segment
-
-* Click on segments
-Upload Segment (sample segment.csv replace email and mobile numbers)
-
-
-## Create a campaign
-
-* create a campagin
--[ ] issue with send on timezone.
-
-* Name the campaign
-* Standard campaign
-* chose either sms or email (assuming sms number uploaded in segment)
-* Chose segment you have uploaded 
-* build message
-* click next
-* send immediately but note how you could send a weekly (scheduled email)
-
-- [ ] Generate sample html templates
-
-## Journeys
-
-* create templates - only email supported at the moment
-* 
-* chose entry trigger
-- [x] can we embed an SMS No. It’ll probably be next year. 
-
-
-
-- [x] what does condition type "segment" mean? It means that anyone who’s a member of the selected segment will go down that path. I think the idea is that you could have one master segment that enters the journey, and a bunch of sub-segments that complete different paths within the journey. 
- --[ ]
-- [x] mv split - does it priorities based on higher alph eg if branch a is open and branch b is click will the user get branch a? yes
-
-
-#
-```js
-npx create-react-app myapp
-cd myapp
-amplify init
-amplify add hosting
-amplify publish
-
-amplify add auth 
-    -> default
-    -> email 
-amplify publish
-
-yarn add aws-amplify-react  aws-amplify
-```
-
-modify source code to add auth ->index.js
-
-```
-amplify add analytics
-```

@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Amazon Pinpoint Workshop :: Amazon Pinpoint Workshop</title>
+    <title>Create an AWS account :: Amazon Pinpoint Workshop</title>
 
     
     <link href="/css/nucleus.css?1574152534" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/10_prerequisites/1_account/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/10_prerequisites/" title="Prerequisites" class="dd-item 
-        
+        parent
         
         
         ">
@@ -100,7 +100,7 @@
  
   
     
-      <li data-nav-id="/10_prerequisites/1_account/" title="Create an AWS account" class="dd-item ">
+      <li data-nav-id="/10_prerequisites/1_account/" title="Create an AWS account" class="dd-item active">
         <a href="/10_prerequisites/1_account/">
         Create an AWS account
         
@@ -365,37 +365,107 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Amazon Pinpoint Workshop</a> > <a href='/10_prerequisites/'>Prerequisites</a> > Create an AWS account
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Create an AWS account
+            </h1>
           
 
         
 
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
-
- 
 
 
-<h1 id="amazon-pinpoint-workshop">Amazon Pinpoint Workshop</h1>
+<div class="notices warning" ><p>Your account must have the ability to create new IAM roles and scope other IAM permissions.</p>
+</div>
 
-<h2 id="build-a-multichannel-customer-engagement-solution-using-amazon-pinpoint">Build a multichannel customer engagement solution using Amazon Pinpoint</h2>
 
-<h3 id="welcome">Welcome!</h3>
 
-<p>In this workshop you will learn how to engage with your customers by using Amazon Pinpoint. You will send email, SMS, push, and voice messages.
-You will leave with an Amazon Pinpoint project that you can use to engage with the right customers at the right time through the right channels.</p>
+<div class="notices tip" ><p>If you already have an AWS account, and have IAM Administrator access, you can skip this page.</p>
+</div>
+
+
+<ol>
+<li><p><strong>If you don&rsquo;t already have an AWS account with Administrator access</strong>: <a href="https://aws.amazon.com/getting-started/">create
+one now</a></p></li>
+
+<li><p>Once you have an AWS account, ensure you are following the remaining workshop steps
+as an <strong>IAM user</strong> with administrator access to the AWS account:
+<a href="https://console.aws.amazon.com/iam/home?region=us-east-1#/users$new">Create a new IAM user to use for the workshop</a></p></li>
+
+<li><p>Enter the user details:
+<img src="/images/iam-1-create-user.png" alt="Create User" /></p></li>
+
+<li><p>Attach the AdministratorAccess IAM Policy:
+<img src="/images/iam-2-attach-policy.png" alt="Attach Policy" /></p></li>
+
+<li><p>Click to create the new user:
+<img src="/images/iam-3-create-user.png" alt="Confirm User" /></p></li>
+
+<li><p>Take note of the login URL and save:
+<img src="/images/iam-4-save-url.png" alt="Login URL" /></p></li>
+</ol>
+
+
+<footer class=" footline" >
 	
-  
-        
-            </div> 
+</footer>
+
+
         
         </div> 
         
@@ -427,8 +497,6 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -442,6 +510,7 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
             
                 
+                    
                     
                 
                 
@@ -458,6 +527,9 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -610,8 +682,10 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
 	 
 	 
 		
+			<a class="nav nav-prev" href="/10_prerequisites/" title="Prerequisites"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/10_prerequisites/" title="Prerequisites" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/10_prerequisites/10_workspace/" title="Create a Cloud9 Workspace" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
