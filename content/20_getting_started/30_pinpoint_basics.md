@@ -20,7 +20,9 @@ What is a segment - insert definition
 Upload Segment (sample segment.csv replace email and mobile numbers)
 
 
-## Create a campaign
+## Create a Message Template
+
+## Create a Campaign
 
 * create a campagin
 ```
@@ -35,6 +37,7 @@ What is a campaign - insert definition
 * build message
 * click next
 * send immediately but note how you could send a weekly (scheduled email)
+
 
 - [ ] Generate sample html templates
 
