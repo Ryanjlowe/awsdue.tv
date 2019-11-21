@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Amazon Pinpoint Workshop :: Amazon Pinpoint Workshop</title>
+    <title>Create new project :: Amazon Pinpoint Workshop</title>
 
     
     <link href="/css/nucleus.css?1574152534" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/20_getting_started/20_create_project/">
     <nav id="sidebar" class="">
 
 
@@ -165,7 +165,7 @@
   
     
     <li data-nav-id="/20_getting_started/" title="Getting Started" class="dd-item 
-        
+        parent
         
         
         ">
@@ -208,7 +208,7 @@
  
   
     
-      <li data-nav-id="/20_getting_started/20_create_project/" title="Create new project" class="dd-item ">
+      <li data-nav-id="/20_getting_started/20_create_project/" title="Create new project" class="dd-item active">
         <a href="/20_getting_started/20_create_project/">
         Create new project
         
@@ -365,37 +365,232 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Amazon Pinpoint Workshop</a> > <a href='/20_getting_started/'>Getting Started</a> > Create new project
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#to-do">to do:</a></li>
+<li><a href="#step-1-create-pinpoint-project">Step 1: Create Pinpoint Project</a>
+<ul>
+<li><a href="#initial-configuration">Initial Configuration</a></li>
+</ul></li>
+<li><a href="#step-2-sending-some-test-messages">Step 2: Sending some test messages</a>
+<ul>
+<li><a href="#test-email">Test Email</a></li>
+<li><a href="#test-sms">Test SMS</a></li>
+</ul></li>
+<li><a href="#creating-a-segment">Creating a segment</a></li>
+<li><a href="#create-a-campaign">Create a campaign</a></li>
+<li><a href="#create-a-campaign-1">Create a campaign</a></li>
+<li><a href="#journeys">Journeys</a></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Create new project
+            </h1>
           
 
         
 
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
-
- 
 
 
-<h1 id="amazon-pinpoint-workshop">Amazon Pinpoint Workshop</h1>
 
-<h2 id="build-a-multichannel-customer-engagement-solution-using-amazon-pinpoint">Build a multichannel customer engagement solution using Amazon Pinpoint</h2>
+<h2 id="to-do">to do:</h2>
 
-<h3 id="welcome">Welcome!</h3>
+<ul class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> fix region in urls</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> sandbox info</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> should we educate on endpoint limits</label></li>
+</ul>
 
-<p>In this workshop you will learn how to engage with your customers by using Amazon Pinpoint. You will send email, SMS, push, and voice messages.
-You will leave with an Amazon Pinpoint project that you can use to engage with the right customers at the right time through the right channels.</p>
+<p><img src="/images/amazon-pinpoint-icon.png" alt="Amazon Pinpoint Icon" />
+This workshop has two labs in it. The first lab covers creating a campaign and Journey within Amazon Pinpoint, whilst the second part covers embedding the Analytics API into your application to understand user behaviours and create dynamic segments.</p>
+
+<p>The second lab requires you to have completed lab 1.</p>
+
+<h2 id="step-1-create-pinpoint-project">Step 1: Create Pinpoint Project</h2>
+
+<p><strong>This workshop has been tested in {{INSERT REGION HERE}}</strong></p>
+
+<h3 id="initial-configuration">Initial Configuration</h3>
+
+<ol>
+<li>First head to Amazon Pinpoint in the <a href="https://us-west-2.console.aws.amazon.com/pinpoint/home?region=us-west-2#/apps">AWS Console</a>. Enter a project name of <code>pinpointWorkshop</code> and click on the &lsquo;Create a project&rsquo; button <img src="/images/pinpoint-get-started.png" alt="pinpointConsole" /></li>
+<li>For this workshop we will cover Email and SMS And voice, so first of all click on <code>Configure</code> underneath  Email.<img src="/images/pinpoint-created-project.png" alt="emailconfig" /></li>
+<li>We have to validate that you own the email address to stop people being able to send emails with incorrect emails adresses. This lab requires you to validate your email address (and we will do more later on). Enter your email address and click verify. You will be instantly emailed a link which you need to click on to verify you own the account.<img src="/images/validate-email.png" alt="emailconfig" /></li>
+<li>Click Save.</li>
+<li>If you want to be able to send emails (while in sandbox mode [insert url]) to other accounts you will have to add these as well. You can do this by going to <code>Settings -&gt; Email -&gt; Identity Details -&gt; Edit</code> and then adding and verifying a new email address.</li>
+<li>There are also limits you may want to enable&hellip;</li>
+<li>You are also able to send SNS via Pinpoint but as with Emails, you need to enable this first. To do this go to  <code>Settings -&gt; SMS and Voice -&gt; Edit</code> and enable the SMS channel for this project.</li>
+</ol>
+
+<p>You Pinpoint project is now ready to send messages.</p>
+
+<h2 id="step-2-sending-some-test-messages">Step 2: Sending some test messages</h2>
+
+<p>In the menu bar on the left hand side click on <code>Test Messaging</code>.</p>
+
+<h3 id="test-email">Test Email</h3>
+
+<ol>
+<li>Click on <code>Email</code>.</li>
+<li>The sender email address should already be configured following the setup in Lab 1.</li>
+<li>Enter the same email address in the destination as the sender (as we know this address is verified)</li>
+<li>Create a simple message and enter a subject line then click <code>Send message</code> - now check your inbox as you should have mail!<img src="/images/message-template.png" alt="pinpointConsole" /></li>
+</ol>
+
+<h3 id="test-sms">Test SMS</h3>
+
+<ol>
+<li>Click on <code>SMS</code></li>
+<li>Enter your Phone numbers</li>
+<li>Fill in a message body</li>
+<li>Click send message.</li>
+</ol>
+
+<h2 id="creating-a-segment">Creating a segment</h2>
+
+<ul>
+<li>Click on segments
+Upload Segment (sample segment.csv replace email and mobile numbers)</li>
+</ul>
+
+<h2 id="create-a-campaign">Create a campaign</h2>
+
+<ul>
+<li><p>create a campagin
+-[ ] issue with send on timezone.</p></li>
+
+<li><p>Name the campaign</p></li>
+
+<li><p>Standard campaign</p></li>
+
+<li><p>chose either sms or email (assuming sms number uploaded in segment)</p></li>
+
+<li><p>Chose segment you have uploaded</p></li>
+
+<li><p>build message</p></li>
+
+<li><p>click next</p></li>
+
+<li><p>send immediately but note how you could send a weekly (scheduled email)</p></li>
+
+<li><p>[ ] Generate sample html templates</p></li>
+</ul>
+
+<h2 id="create-a-campaign-1">Create a campaign</h2>
+
+<ul>
+<li>create a campagin</li>
+</ul>
+
+<h2 id="journeys">Journeys</h2>
+
+<ul>
+<li> Journeys
+write up following journeys</li>
+</ul>
+
+<p><img src="/images/samplejourney-separateemailbasedonsegment.png" alt="pinpointConsole" />
+following one could use yes/no rather than mv so give an example of an MV split which could be if link click / if email open . if email delivered
+<img src="/images/samplejourney-separateemailbasedonsegment.png" alt="pinpointConsole" /></p>
+
+<ul>
+<li>create templates - only email supported at the moment</li>
+<li></li>
+<li>chose entry trigger</li>
+
+<li><p>[x] can we embed an SMS No. It’ll probably be next year.</p></li>
+
+<li><p>[x] what does condition type &ldquo;segment&rdquo; mean? It means that anyone who’s a member of the selected segment will go down that path. I think the idea is that you could have one master segment that enters the journey, and a bunch of sub-segments that complete different paths within the journey.
+&ndash;[ ]</p></li>
+
+<li><p>[x] mv split - does it priorities based on higher alph eg if branch a is open and branch b is click will the user get branch a? yes</p></li>
+</ul>
+
+<p>#</p>
+
+<pre><code class="language-js">npx create-react-app myapp
+cd myapp
+amplify init
+amplify add hosting
+amplify publish
+
+amplify add auth 
+    -&gt; default
+    -&gt; email 
+amplify publish
+
+yarn add aws-amplify-react  aws-amplify
+</code></pre>
+
+<p>modify source code to add auth -&gt;index.js</p>
+
+<pre><code>amplify add analytics
+</code></pre>
+
+
+<footer class=" footline" >
 	
-  
-        
-            </div> 
+</footer>
+
+
         
         </div> 
         
@@ -494,6 +689,7 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
                 
                     
+                    
                 
                 
 
@@ -506,6 +702,9 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -523,6 +722,7 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
                 
                     
+                    
                 
                 
 
@@ -541,6 +741,9 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -610,8 +813,10 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
 	 
 	 
 		
+			<a class="nav nav-prev" href="/20_getting_started/10_what_we_will_build/" title="What We&#39;ll Build"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/10_prerequisites/" title="Prerequisites" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/200_wrap_up/" title="Wrapping up" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>

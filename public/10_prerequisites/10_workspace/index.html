@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Amazon Pinpoint Workshop :: Amazon Pinpoint Workshop</title>
+    <title>Create a Cloud9 Workspace :: Amazon Pinpoint Workshop</title>
 
     
     <link href="/css/nucleus.css?1574152534" rel="stylesheet">
@@ -35,7 +35,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/">
+  <body class="" data-url="/10_prerequisites/10_workspace/">
     <nav id="sidebar" class="">
 
 
@@ -76,7 +76,7 @@
   
     
     <li data-nav-id="/10_prerequisites/" title="Prerequisites" class="dd-item 
-        
+        parent
         
         
         ">
@@ -119,7 +119,7 @@
  
   
     
-      <li data-nav-id="/10_prerequisites/10_workspace/" title="Create a Cloud9 Workspace" class="dd-item ">
+      <li data-nav-id="/10_prerequisites/10_workspace/" title="Create a Cloud9 Workspace" class="dd-item active">
         <a href="/10_prerequisites/10_workspace/">
         Create a Cloud9 Workspace
         
@@ -365,37 +365,128 @@
         <div id="overlay"></div>
         <div class="padding highlightable">
               
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Amazon Pinpoint Workshop</a> > <a href='/10_prerequisites/'>Prerequisites</a> > Create a Cloud9 Workspace
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li><a href="#create-a-new-environment">Create a new environment</a></li>
+<li><a href="#clean-up-the-layout">Clean up the layout</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
         <div id="head-tags">
         
         </div>
         
-          <div id="chapter">
-        
         <div id="body-inner">
+          
+            <h1>
+              
+              Create a Cloud9 Workspace
+            </h1>
           
 
         
 
 
-<span id="sidebar-toggle-span">
-<a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fas fa-bars"></i> navigation</a>
-</span>
-
- 
 
 
-<h1 id="amazon-pinpoint-workshop">Amazon Pinpoint Workshop</h1>
 
-<h2 id="build-a-multichannel-customer-engagement-solution-using-amazon-pinpoint">Build a multichannel customer engagement solution using Amazon Pinpoint</h2>
+<p>AWS Cloud9 is a cloud-based integrated development environment (IDE) that lets you write, run, and debug your code with just a browser. It includes a code editor, debugger, and terminal. Cloud9 comes prepackaged with essential tools for popular programming languages, including JavaScript, Python, PHP, and more, so you don&rsquo;t need to install files or configure your development machine to start new projects.</p>
 
-<h3 id="welcome">Welcome!</h3>
 
-<p>In this workshop you will learn how to engage with your customers by using Amazon Pinpoint. You will send email, SMS, push, and voice messages.
-You will leave with an Amazon Pinpoint project that you can use to engage with the right customers at the right time through the right channels.</p>
+<div class="notices warning" ><p>The Cloud9 workspace should be built by an IAM user with Administrator privileges,
+not the root account user. Please ensure you are logged in as an IAM user, not the root
+account user.</p>
+</div>
+
+
+
+<div class="notices info" ><p>Ad blockers, JavaScript disablers, and tracking blockers should be disabled for
+the cloud9 domain, otherwise connecting to the workspace might be impacted.</p>
+</div>
+
+
+<h3 id="create-a-new-environment">Create a new environment</h3>
+
+<ol>
+<li>Go to the <a href="https://us-west-2.console.aws.amazon.com/cloud9/home?region=us-west-2">Cloud9 web console</a>.</li>
+<li>At the top right corner of the console, make sure you&rsquo;re using one of these regions: Virginia (us-east-1), Oregon (us-west-2), Ireland (eu-west-1) or Singapore (ap-southeast-1)</li>
+<li>Select <strong>Create environment</strong></li>
+<li>Name it <strong>workshop</strong>, and go to the <strong>Next step</strong></li>
+<li>Select <strong>Create a new instance for environment (EC2)</strong>, pick <strong>t2.small (2 GiB RAM + 1 vCPU)</strong>, and <strong>Amazon Linux</strong></li>
+<li>Leave all of the environment settings as they are, and go to the <strong>Next step</strong></li>
+<li>Click <strong>Create environment</strong></li>
+</ol>
+
+<h3 id="clean-up-the-layout">Clean up the layout</h3>
+
+<p>When the environment comes up, customize the layout by closing the <strong>welcome tab</strong>
+and <strong>lower work area</strong>, and opening a new <strong>terminal</strong> tab in the main work area:
+<img src="/images/c9before.png" alt="c9before" /></p>
+
+<p>Your workspace should now look like this:
+<img src="/images/c9after.png" alt="c9after" /></p>
+
+<p>If you like this theme, you can choose it yourself by selecting <strong>View / Themes / Solarized / Solarized Dark</strong>
+in the Cloud9 workspace menu.</p>
+
+
+<footer class=" footline" >
 	
-  
-        
-            </div> 
+</footer>
+
+
         
         </div> 
         
@@ -427,8 +518,6 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -442,6 +531,9 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -459,6 +551,7 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
                 
                     
+                    
                 
                 
 
@@ -474,6 +567,9 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -610,8 +706,10 @@ You will leave with an Amazon Pinpoint project that you can use to engage with t
 	 
 	 
 		
+			<a class="nav nav-prev" href="/10_prerequisites/1_account/" title="Create an AWS account"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/10_prerequisites/" title="Prerequisites" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/10_prerequisites/20_software/" title="Installs &amp; Configs" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
