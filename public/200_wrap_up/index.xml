@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wrapping up on Amazon Pinpoint Workshop</title>
-    <link>http://example.org/200_wrap_up/</link>
+    <link>https://pinpoint-workshop.com/200_wrap_up/</link>
     <description>Recent content in Wrapping up on Amazon Pinpoint Workshop</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Nov 2019 01:22:20 +0100</lastBuildDate>
     
-	<atom:link href="http://example.org/200_wrap_up/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://pinpoint-workshop.com/200_wrap_up/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Congratulations!</title>
-      <link>http://example.org/200_wrap_up/10_what_we_built/</link>
+      <link>https://pinpoint-workshop.com/200_wrap_up/10_what_we_built/</link>
       <pubDate>Mon, 18 Nov 2019 01:39:11 +0100</pubDate>
       
-      <guid>http://example.org/200_wrap_up/10_what_we_built/</guid>
+      <guid>https://pinpoint-workshop.com/200_wrap_up/10_what_we_built/</guid>
       <description> Congratulations! //TODO: Summary of achievements
 Here&amp;rsquo;s a reminder of everything we accomplished. We:
  &amp;hellip;  Not bad for a few hours of work!
@@ -26,10 +26,10 @@ What will you build next? </description>
     
     <item>
       <title>Cleaning up</title>
-      <link>http://example.org/200_wrap_up/20_cleanup/</link>
+      <link>https://pinpoint-workshop.com/200_wrap_up/20_cleanup/</link>
       <pubDate>Mon, 18 Nov 2019 01:39:19 +0100</pubDate>
       
-      <guid>http://example.org/200_wrap_up/20_cleanup/</guid>
+      <guid>https://pinpoint-workshop.com/200_wrap_up/20_cleanup/</guid>
       <description>Cleaning up Instructions for removing resources.</description>
     </item>
     

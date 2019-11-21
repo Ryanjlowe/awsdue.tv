@@ -3,65 +3,89 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://example.org/10_prerequisites/1_account/</loc>
+    <loc>https://pinpoint-workshop.com/10_prerequisites/1_account/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/</loc>
+    <loc>https://pinpoint-workshop.com/</loc>
     <lastmod>2019-11-18T00:41:38+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/200_wrap_up/10_what_we_built/</loc>
+    <loc>https://pinpoint-workshop.com/200_wrap_up/10_what_we_built/</loc>
     <lastmod>2019-11-18T01:39:11+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/10_prerequisites/</loc>
+    <loc>https://pinpoint-workshop.com/10_prerequisites/</loc>
     <lastmod>2019-11-18T01:12:14+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/10_prerequisites/10_workspace/</loc>
+    <loc>https://pinpoint-workshop.com/10_prerequisites/10_workspace/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/20_getting_started/10_what_we_will_build/</loc>
+    <loc>https://pinpoint-workshop.com/30_creating_a_journey/10_what_is_a_journey/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/200_wrap_up/20_cleanup/</loc>
+    <loc>https://pinpoint-workshop.com/20_getting_started/10_what_we_will_build/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pinpoint-workshop.com/200_wrap_up/20_cleanup/</loc>
     <lastmod>2019-11-18T01:39:19+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/20_getting_started/20_create_project/</loc>
+    <loc>https://pinpoint-workshop.com/20_getting_started/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/20_getting_started/</loc>
+    <loc>https://pinpoint-workshop.com/10_prerequisites/20_software/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/10_prerequisites/20_software/</loc>
+    <loc>https://pinpoint-workshop.com/20_getting_started/20_pinpoint_setup/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/200_wrap_up/</loc>
+    <loc>https://pinpoint-workshop.com/30_creating_a_journey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pinpoint-workshop.com/30_creating_a_journey/30_inactive_user_journey/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pinpoint-workshop.com/20_getting_started/30_pinpoint_basics/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pinpoint-workshop.com/20_getting_started/40_pinpoint_journeys/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pinpoint-workshop.com/200_wrap_up/</loc>
     <lastmod>2019-11-18T01:22:20+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/300_bonus/</loc>
+    <loc>https://pinpoint-workshop.com/300_bonus/</loc>
     <lastmod>2019-11-18T01:22:08+01:00</lastmod>
   </url>
   
   <url>
-    <loc>http://example.org/categories/</loc>
+    <loc>https://pinpoint-workshop.com/30_creating_a_journey/20_active_user_journey/</loc>
   </url>
   
   <url>
-    <loc>http://example.org/tags/</loc>
+    <loc>https://pinpoint-workshop.com/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://pinpoint-workshop.com/tags/</loc>
   </url>
   
 </urlset>

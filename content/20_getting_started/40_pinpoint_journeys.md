@@ -23,7 +23,7 @@ In this section of the workshop we are going to build a journey. In order to do 
 
 >In Amazon Pinpoint, a journey is a customized, multi-step engagement experience. When you create a journey, you start by choosing a segment that defines which customers will participate in the journey. After that, you add the activities that customers pass through on their journeys. Activities can include sending messages or splitting customers into groups based on their behaviors.
 
-In this section we are going to replicate a real life onboarding flow where we try to either "Re-engage" inactive users (see right hand red side of the diagram) by a sequence of emails or alternatively if the user is active on our site (see left hand side) we send a flow to get them to perform tasks which creates stickiness with the product.
+We are going to replicate a real life onboarding flow where we try to either "Re-engage" inactive users (see right hand red side of the diagram) by a sequence of emails or alternatively if the user is active on our site (see left hand side) we send a flow to get them to perform tasks which creates stickiness with the product.
 
 ![workflow](/images/OnboardingFlow_V1.png)
 

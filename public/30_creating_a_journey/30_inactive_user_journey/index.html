@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.59.1" />
+    <meta name="description" content="">
+
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Inactive User Journeys :: Amazon Pinpoint Workshop</title>
+
+    
+    <link href="/css/nucleus.css?1574337339" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1574337339" rel="stylesheet">
+    <link href="/css/hybrid.css?1574337339" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1574337339" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1574337339" rel="stylesheet">
+    <link href="/css/auto-complete.css?1574337339" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1574337339" rel="stylesheet">
+    <link href="/css/theme.css?1574337339" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1574337339" rel="stylesheet">
+    
+      <link href="/css/theme-mine.css?1574337339" rel="stylesheet">
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1574337339"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/30_creating_a_journey/30_inactive_user_journey/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <a href="/" title="Go home"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 30" width="60%" style="padding:20px 0px;"><defs><style>.cls-1{fill:#fff;}.cls-2{fill:#f90;fill-rule:evenodd;}</style></defs><title>AWS-Logo_White-Color</title><path class="cls-1" d="M14.09,10.85a4.7,4.7,0,0,0,.19,1.48,7.73,7.73,0,0,0,.54,1.19.77.77,0,0,1,.12.38.64.64,0,0,1-.32.49l-1,.7a.83.83,0,0,1-.44.15.69.69,0,0,1-.49-.23,3.8,3.8,0,0,1-.6-.77q-.25-.42-.51-1a6.14,6.14,0,0,1-4.89,2.3,4.54,4.54,0,0,1-3.32-1.19,4.27,4.27,0,0,1-1.22-3.2A4.28,4.28,0,0,1,3.61,7.75,6.06,6.06,0,0,1,7.69,6.46a12.47,12.47,0,0,1,1.76.13q.92.13,1.91.36V5.73a3.65,3.65,0,0,0-.79-2.66A3.81,3.81,0,0,0,7.86,2.3a7.71,7.71,0,0,0-1.79.22,12.78,12.78,0,0,0-1.79.57,4.55,4.55,0,0,1-.58.22l-.26,0q-.35,0-.35-.52V2a1.09,1.09,0,0,1,.12-.58,1.2,1.2,0,0,1,.47-.35A10.88,10.88,0,0,1,5.77.32,10.19,10.19,0,0,1,8.36,0a6,6,0,0,1,4.35,1.35,5.49,5.49,0,0,1,1.38,4.09ZM7.34,13.38a5.36,5.36,0,0,0,1.72-.31A3.63,3.63,0,0,0,10.63,12,2.62,2.62,0,0,0,11.19,11a5.63,5.63,0,0,0,.16-1.44v-.7a14.35,14.35,0,0,0-1.53-.28,12.37,12.37,0,0,0-1.56-.1,3.84,3.84,0,0,0-2.47.67A2.34,2.34,0,0,0,5,11a2.35,2.35,0,0,0,.61,1.76A2.4,2.4,0,0,0,7.34,13.38Zm13.35,1.8a1,1,0,0,1-.64-.16,1.3,1.3,0,0,1-.35-.65L15.81,1.51a3,3,0,0,1-.15-.67.36.36,0,0,1,.41-.41H17.7a1,1,0,0,1,.65.16,1.4,1.4,0,0,1,.33.65l2.79,11,2.59-11A1.17,1.17,0,0,1,24.39.6a1.1,1.1,0,0,1,.67-.16H26.4a1.1,1.1,0,0,1,.67.16,1.17,1.17,0,0,1,.32.65L30,12.39,32.88,1.25A1.39,1.39,0,0,1,33.22.6a1,1,0,0,1,.65-.16h1.54a.36.36,0,0,1,.41.41,1.36,1.36,0,0,1,0,.26,3.64,3.64,0,0,1-.12.41l-4,12.86a1.3,1.3,0,0,1-.35.65,1,1,0,0,1-.64.16H29.25a1,1,0,0,1-.67-.17,1.26,1.26,0,0,1-.32-.67L25.67,3.64,23.11,14.34a1.26,1.26,0,0,1-.32.67,1,1,0,0,1-.67.17Zm21.36.44a11.28,11.28,0,0,1-2.56-.29,7.44,7.44,0,0,1-1.92-.67,1,1,0,0,1-.61-.93v-.84q0-.52.38-.52a.9.9,0,0,1,.31.06l.42.17a8.77,8.77,0,0,0,1.83.58,9.78,9.78,0,0,0,2,.2,4.48,4.48,0,0,0,2.43-.55,1.76,1.76,0,0,0,.86-1.57,1.61,1.61,0,0,0-.45-1.16A4.29,4.29,0,0,0,43,9.22l-2.41-.76A5.15,5.15,0,0,1,38,6.78a3.94,3.94,0,0,1-.83-2.41,3.7,3.7,0,0,1,.45-1.85,4.47,4.47,0,0,1,1.19-1.37A5.27,5.27,0,0,1,40.51.29,7.4,7.4,0,0,1,42.6,0a8.87,8.87,0,0,1,1.12.07q.57.07,1.08.19t.95.26a4.27,4.27,0,0,1,.7.29,1.59,1.59,0,0,1,.49.41.94.94,0,0,1,.15.55v.79q0,.52-.38.52a1.76,1.76,0,0,1-.64-.2,7.74,7.74,0,0,0-3.2-.64,4.37,4.37,0,0,0-2.21.47,1.6,1.6,0,0,0-.79,1.48,1.58,1.58,0,0,0,.49,1.18,4.94,4.94,0,0,0,1.83.92L44.55,7a5.08,5.08,0,0,1,2.57,1.6A3.76,3.76,0,0,1,47.9,11a4.21,4.21,0,0,1-.44,1.93,4.4,4.4,0,0,1-1.21,1.47,5.43,5.43,0,0,1-1.85.93A8.25,8.25,0,0,1,42.05,15.62Z"></path><path class="cls-2" d="M45.19,23.81C39.72,27.85,31.78,30,25,30A36.64,36.64,0,0,1,.22,20.57c-.51-.46-.06-1.09.56-.74A49.78,49.78,0,0,0,25.53,26.4,49.23,49.23,0,0,0,44.4,22.53C45.32,22.14,46.1,23.14,45.19,23.81Z"></path><path class="cls-2" d="M47.47,21.21c-.7-.9-4.63-.42-6.39-.21-.53.06-.62-.4-.14-.74,3.13-2.2,8.27-1.57,8.86-.83s-.16,5.89-3.09,8.35c-.45.38-.88.18-.68-.32C46.69,25.8,48.17,22.11,47.47,21.21Z"></path></svg></a>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1574337339"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1574337339"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/pinpoint-workshop.com";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1574337339"></script>
+
+    
+  </div>
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/10_prerequisites/" title="Prerequisites" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/10_prerequisites/">
+          Prerequisites
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/10_prerequisites/1_account/" title="Create an AWS account" class="dd-item ">
+        <a href="/10_prerequisites/1_account/">
+        Create an AWS account
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/10_prerequisites/10_workspace/" title="Create a Cloud9 Workspace" class="dd-item ">
+        <a href="/10_prerequisites/10_workspace/">
+        Create a Cloud9 Workspace
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/10_prerequisites/20_software/" title="Installs &amp; Configs" class="dd-item ">
+        <a href="/10_prerequisites/20_software/">
+        Installs &amp; Configs
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/20_getting_started/" title="Getting Started" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/20_getting_started/">
+          Getting Started
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/10_what_we_will_build/" title="What We&#39;ll Build" class="dd-item ">
+        <a href="/20_getting_started/10_what_we_will_build/">
+        What We&#39;ll Build
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/20_pinpoint_setup/" title="Pinpoint Setup" class="dd-item ">
+        <a href="/20_getting_started/20_pinpoint_setup/">
+        Pinpoint Setup
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/30_pinpoint_basics/" title="Pinpoint Basics" class="dd-item ">
+        <a href="/20_getting_started/30_pinpoint_basics/">
+        Pinpoint Basics
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/20_getting_started/40_pinpoint_journeys/" title="Create Journeys" class="dd-item ">
+        <a href="/20_getting_started/40_pinpoint_journeys/">
+        Create Journeys
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/30_creating_a_journey/" title="Creating A Journey" class="dd-item 
+        parent
+        
+        
+        ">
+      <a href="/30_creating_a_journey/">
+          Creating A Journey
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/30_creating_a_journey/10_what_is_a_journey/" title="What is a Journey" class="dd-item ">
+        <a href="/30_creating_a_journey/10_what_is_a_journey/">
+        What is a Journey
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/30_creating_a_journey/30_inactive_user_journey/" title="Inactive User Journeys" class="dd-item active">
+        <a href="/30_creating_a_journey/30_inactive_user_journey/">
+        Inactive User Journeys
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/30_creating_a_journey/20_active_user_journey/" title="Active User Journey" class="dd-item ">
+        <a href="/30_creating_a_journey/20_active_user_journey/">
+        Active User Journey
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/200_wrap_up/" title="Wrapping up" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/200_wrap_up/">
+          Wrapping up
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+          
+        
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/200_wrap_up/10_what_we_built/" title="Congratulations!" class="dd-item ">
+        <a href="/200_wrap_up/10_what_we_built/">
+        Congratulations!
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+ 
+  
+    
+      <li data-nav-id="/200_wrap_up/20_cleanup/" title="Cleaning up" class="dd-item ">
+        <a href="/200_wrap_up/20_cleanup/">
+        Cleaning up
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+              
+    </li>
+  
+ 
+
+          
+          
+
+
+ 
+  
+    
+    <li data-nav-id="/300_bonus/" title="Bonus content" class="dd-item 
+        
+        
+        
+        ">
+      <a href="/300_bonus/">
+          Bonus content
+          
+      </a>
+      
+              
+    </li>
+  
+ 
+
+          
+         
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li> 
+                  <a class="padding" href="https://docs.aws.amazon.com/pinpoint/"><i class='fas fa-fw fa-bookmark'></i> Amazon Pinpoint Documentation</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://twitter.com/intent/user?screen_name=awscloud"><i class='fab fa-twitter fa-lg'></i> @awscloud</a>
+              </li>
+          
+              <li> 
+                  <a class="padding" href="https://github.com/aws-samples/amazon-pinpoint-workshop"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <left>
+
+    <h2 class="github-title">Github Repo</h2>
+
+    <h3 class="github-title">Amazon Pinpoint Workshop</h3>
+    <a class="github-button" href="https://github.com/aws-samples/amazon-pinpoint-workshop" data-icon="octicon-star" data-show-count="true" aria-label="Star on GitHub">Star</a>
+    &nbsp;<a class="github-button" href="https://github.com/aws-samples/amazon-pinpoint-workshop/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork on GitHub">Fork</a><br />
+
+    <h5 class="copyright">&copy; 2019 Amazon Web Services, Inc. or its Affiliates. All rights reserved.<h5>
+
+</left>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script> 
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Amazon Pinpoint Workshop</a> > <a href='/30_creating_a_journey/'>Creating A Journey</a> > Inactive User Journeys
+          
+         
+          
+         
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#journeys">Journeys</a></li>
+<li><a href="#creating-a-dynamic-segment">Creating a Dynamic Segment</a>
+<ul>
+<li><a href="#create-active-users-segment">Create Active Users Segment</a></li>
+<li><a href="#create-inactive-users-segment">Create Inactive Users Segment</a></li>
+</ul></li>
+<li><a href="#creating-your-first-journey-active-users">Creating your first Journey - Active Users</a>
+<ul>
+<li><a href="#creating-the-message-templates-to-send">Creating the message templates to send</a></li>
+<li><a href="#building-the-journey">Building the Journey</a>
+<ul>
+<li><a href="#1-journey-entry">1. Journey Entry</a></li>
+<li><a href="#2-adding-activities">2. Adding Activities</a></li>
+<li><a href="#3-wait">3. Wait</a></li>
+<li><a href="#4-send-email">4. Send Email</a></li>
+<li><a href="#5-wait">5. Wait</a></li>
+<li><a href="#6-multivariate-split">6. Multivariate Split</a></li>
+<li><a href="#6-1-send-email">6.1. Send Email</a></li>
+<li><a href="#6-2-send-email">6.2. Send Email</a></li>
+<li><a href="#6-3-send-email">6.3. Send Email</a></li>
+</ul></li>
+<li><a href="#complete-journey">Complete Journey</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Inactive User Journeys
+            </h1>
+          
+
+        
+
+
+
+
+
+<ul class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> Update onboarding workflow.</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> modify img path to /images&rdquo; rahter than /images</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> remove symlink</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> dynamic segments - &lsquo;and who have used your app within the past 30 days.&rsquo; also add content.</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> ensure there is a message template section in pinpoint basics</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> upload Message Templates</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> remove journey exit from full diagram</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> check that segments down stream can change once a journey has started</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> inacurate total endpoints</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> journey wait times.</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> flow vs journey consistency</label></li>
+
+<li><p>[ ]</p>
+
+<h2 id="journeys">Journeys</h2></li>
+</ul>
+
+<p>In this section of the workshop we are going to build a journey. In order to do this section you <strong>MUST</strong> complete the previous Pinpoint basics lab as we will be using the segment we initially uploaded.</p>
+
+<blockquote>
+<p>In Amazon Pinpoint, a journey is a customized, multi-step engagement experience. When you create a journey, you start by choosing a segment that defines which customers will participate in the journey. After that, you add the activities that customers pass through on their journeys. Activities can include sending messages or splitting customers into groups based on their behaviors.</p>
+</blockquote>
+
+<p>We are going to replicate a real life onboarding flow where we try to either &ldquo;Re-engage&rdquo; inactive users (see right hand red side of the diagram) by a sequence of emails or alternatively if the user is active on our site (see left hand side) we send a flow to get them to perform tasks which creates stickiness with the product.</p>
+
+<p><img src="/images/OnboardingFlow_V1.png" alt="workflow" /></p>
+
+<h2 id="creating-a-dynamic-segment">Creating a Dynamic Segment</h2>
+
+<p>In order to be able to trigger the different Journeys we are going to use dynamic segments.</p>
+
+<blockquote>
+<p>Dynamic segments are based on the data that your apps provide to Amazon Pinpoint. When you create a dynamic segment, you choose the criteria that define that segment. For example, you could specify all customers who use version 2.0 of your app on an Android device, and who have used your app within the past 30 days. Amazon Pinpoint continuously re-evaluates your segments as your app records new customer interactions. As a result, the size and membership of each segment changes over time. For information about integrating your apps with Amazon Pinpoint, see Integrating Amazon Pinpoint with Your Application in the Amazon Pinpoint Developer Guide.</p>
+</blockquote>
+
+<p>When we created the Segment in the previous section our data CSV contained UserAttributes that we are going to create a Dynamic Segment from, in this example the segment is fairly basic but you have the ability within Pinpoint to create multifaceted segments which can then be used to trigger the start of a journey.</p>
+
+<h3 id="create-active-users-segment">Create Active Users Segment</h3>
+
+<ul>
+<li><p>[ ] get instructions</p>
+
+<h3 id="create-inactive-users-segment">Create Inactive Users Segment</h3></li>
+
+<li><p>[ ] get instructions</p></li>
+</ul>
+
+<h2 id="creating-your-first-journey-active-users">Creating your first Journey - Active Users</h2>
+
+<p>In this journey we have 3 different email templates we are going to send depending on user engagement/activity. In the hypothetical section the user has engaged with our site before and we are trying to get them to re-engage and spread the word about the site</p>
+
+<h3 id="creating-the-message-templates-to-send">Creating the message templates to send</h3>
+
+<p>Before we create the Journey we are going to create new message templates following the same method we did in the previous section</p>
+
+<p>Create Message Template 1:<br />
+   1.  <strong>Template name</strong>: <code>Active-ReEngage</code><br />
+   2.  <strong>Subject</strong>: <code>ActiveUsers-ReEngage Email 1</code><br />
+   3.  <strong>Message</strong>: Copy the html from the following link.</p>
+
+<p>Create Message Template 2:<br />
+   1.  <strong>Template name</strong>: <code>Active-ReferAFriend</code><br />
+   2.  <strong>Subject</strong>: <code>ActiveUsers-Refer A Friend</code><br />
+   3.  <strong>Message</strong>: Copy the html from the following link.</p>
+
+<p>Create Message Template 3:<br />
+   1.  <strong>Template name</strong>: <code>Active-ReEngage2</code><br />
+   2.  <strong>Subject</strong>: <code>ActiveUsers-ReEngage Email 2</code><br />
+   3.  <strong>Message</strong>: Copy the html from the following link.</p>
+
+<h3 id="building-the-journey">Building the Journey</h3>
+
+<p>From within the console on the left hand navigation bar click on &ldquo;Journeys&rdquo; and subsequently click on <code>Create Journey</code> on the top right hand side of the page.</p>
+
+<p><img src="/images/create-journey.png" alt="createJourney" /></p>
+
+<p>Before we start building the Journey lets give it a name by editing the box on the top right and call the Journey <code>Active Users</code>.</p>
+
+<p><img src="/images/aJourney-create-journey.png" alt="createJourney" />.</p>
+
+<h4 id="1-journey-entry">1. Journey Entry</h4>
+
+<p>The first stage of creating a Journey is defining the Journey Entry point, what it is that causes members to enter the journey.</p>
+
+<p>In this journey we are going to use the <code>Active Users</code> segment we created earlier and specify that we want new users to be added to the segment automatically every hour. In doing this it is possible to have Journeys run on a repeatable fashion without you needing to schedule the task. It is also possible to run the Journey as a &lsquo;One off&rsquo; by choosing to never add new segment members.</p>
+
+<ol>
+<li>Chose the <code>activeUsers</code> Segment</li>
+<li>Specify to run once every <code>1</code> <code>hours</code></li>
+<li>If you add a helpful description when the flow item in the Journey folds up in the interface you can read a description of what that flow was doing. Enter <code>Enter the Active User Dynamic Segment</code>.</li>
+<li>Click <code>Save</code></li>
+</ol>
+
+<p><img src="/images/aJourney-createEntry.png" alt="createJourney" />.</p>
+
+<h4 id="2-adding-activities">2. Adding Activities</h4>
+
+<p>Users can now successfully enter the Journey. To add subsequent steps to the journey simply click on the + symbol and you will be able to chose the type of activity you wish to build.
+- [ ] add plus symbol image.</p>
+
+<p><img src="/images/journey-activities.png" alt="createJourney" /></p>
+
+<h4 id="3-wait">3. Wait</h4>
+
+<p>Within Pinpoint we give you the facility to perform a &ldquo;Wait&rdquo; stage, this means that instead of sending a number of emails concurrently we can specify we want the journey to continue after a period of time or at a specific time. Click on the Plus symbol and chose <code>Wait</code>.</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> add details here - confirming how we will do the wait</label></li>
+</ul>
+
+<p><img src="/images/aJourney-wait.png" alt="createJourney" /></p>
+
+<h4 id="4-send-email">4. Send Email</h4>
+
+<p>Once the wait time has been completed the Journey continues for the purpose of this workshop we are going to send out the <code>Active-ReEngage</code> Message we configured earlier.  Click on the Plus symbol and chose <code>Send email</code>.</p>
+
+<p>Select the <code>Active-ReEngage</code> template and click <code>Save</code></p>
+
+<p><img src="/images/aJourney-send-email.png" alt="createJourney" /></p>
+
+<h4 id="5-wait">5. Wait</h4>
+
+<p>Following sending an email you are likely to want to pause before you do followup activity - as with step 3 introduce another wait state to the Journey.</p>
+
+<ul class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> add details here - confirming how we will do the wait</label></li>
+</ul>
+
+<p><img src="/images/aJourney-wait.png" alt="createJourney" /></p>
+
+<h4 id="6-multivariate-split">6. Multivariate Split</h4>
+
+<p>Within Journeys you can create a flow which is determined by certain criteria that can be defined in the flow. With a Multivariate split the customer can go down one of up to four paths and an &lsquo;other&rsquo; path. We do offer a other ways to navigate via user/engagement criteria (Yes/No Split, Random Split).</p>
+
+<p>In this example we will use a multivariate split because we are going to send the user on the journey based on one of three different criteria:
+A. User clicked on links in email sent
+B. User Opened email
+Other. User did not engage with the email we sent.</p>
+
+<blockquote>
+<p>Within the Multivariate activity the user will ONLY take one of the paths and they will follow the highest letter path. In the above example someone who clicked on a link in an email will have also opened the email. In this scenario they would follow the path &lsquo;A - user clicked on links in email sent&rsquo;. It&rsquo;s worth noting that if you have &lsquo;User opened email&rsquo; as your first criteria even if the user clicked on a link they would never follow that path.</p>
+</blockquote>
+
+<ul>
+<li>define condition types</li>
+</ul>
+
+<p><img src="/images/aJourney-mvt-split.png" alt="activeJourney" /></p>
+
+<h4 id="6-1-send-email">6.1. Send Email</h4>
+
+<p>Click on the Plus symbol below <code>Branch A</code> and chose <code>Send email</code>.</p>
+
+<p>Select the <code>Active-ReferAFriend</code> template and click <code>Save</code>
+<img src="/images/aJourney-send-refer-email.png" alt="activeJourney" /></p>
+
+<h4 id="6-2-send-email">6.2. Send Email</h4>
+
+<p>Click on the Plus symbol below <code>Branch b</code> and chose <code>Send email</code>.</p>
+
+<p>Select the <code>Active-DiscountCode</code> template and click <code>Save</code>
+<img src="/images/aJourney-send-discount.png" alt="activeJourney" /></p>
+
+<h4 id="6-3-send-email">6.3. Send Email</h4>
+
+<p>Click on the Plus symbol below <code>Else</code> and chose <code>Send email</code>.</p>
+
+<p>Select the <code>Active-ReEngage2</code> template and click <code>Save</code>
+<img src="/images/aJourney-send-reengage2.png" alt="activeJourney" /></p>
+
+<h3 id="complete-journey">Complete Journey</h3>
+
+<p>Once you have completed all of the steps above your journey should resemble the below image
+<img src="/images/aJourneyFull.png" alt="activeJourney" /></p>
+
+<p><img src="/images/samplejourney-separateemailbasedonsegment.png" alt="pinpointConsole" />
+following one could use yes/no rather than mv so give an example of an MV split which could be if link click / if email open . if email delivered
+![pinpointConsole]/images/samplejourney-separateemailbasedonsegment.png)</p>
+
+<ul class="task-list">
+<li>create templates - only email supported at the moment</li>
+<li></li>
+<li>chose entry trigger</li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> can we embed an SMS No. It’ll probably be next year.</label></li>
+</ul>
+
+
+<footer class=" footline" >
+	
+</footer>
+
+
+        
+        </div> 
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+        
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+        
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/30_creating_a_journey/10_what_is_a_journey/" title="What is a Journey"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/30_creating_a_journey/20_active_user_journey/" title="Active User Journey" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+    
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1574337339"></script>
+    <script src="/js/perfect-scrollbar.min.js?1574337339"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1574337339"></script>
+    <script src="/js/jquery.sticky.js?1574337339"></script>
+    <script src="/js/featherlight.min.js?1574337339"></script>
+    <script src="/js/highlight.pack.js?1574337339"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1574337339"></script>
+    <script src="/js/learn.js?1574337339"></script>
+    <script src="/js/hugo-learn.js?1574337339"></script>
+
+    <link href="/mermaid/mermaid.css?1574337339" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1574337339"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true });
+    </script>
+    
+
+  </body>
+</html>
+
