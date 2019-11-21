@@ -4,55 +4,41 @@ AWS Workshop tutorial to learn how to engage with your customers by using Amazon
 
 ## Developer guide
 
-This workshop is built with markdown as a static HTML site using [Hugo](http://gohugo.io).
-
-#### Install Hugo
-
-On a mac:
-
-`brew install hugo`
-
-On Linux:
-  - Download from the releases page: https://github.com/gohugoio/hugo/releases
-  - Extract and save the executable to `/usr/local/bin`
+This workshop is built with markdown as a static HTML site using [Hugo](http://gohugo.io) and the [Learn theme for Hugo](https://learn.netlify.com/en/).
 
 #### Clone this repo
 
-`git clone git@github.com:aws-samples/amazon-pinpoint-workshop.git`
+The theme is referenced as a [git-submodule](https://git-scm.com/docs/git-submodule).
 
-#### Clone the theme submodule:
+`git clone --recurse-submodules git@github.com:aws-samples/amazon-pinpoint-workshop.git`
 
-This repository uses the [Learn theme for Hugo](https://learn.netlify.com/en/). The theme is referenced as a [git-submodule](https://git-scm.com/docs/git-submodule).
+#### Install and run Hugo
 
-```sh
-cd amazon-pinpoint-workshop
-git submodule init
-git submodule update --checkout --recursive
-```
+##### Homebrew (macOS)
 
-#### Install node packages:
+If you are on macOS and using [Homebrew](https://brew.sh/), you can install Hugo with the following one-liner:
 
-`npm install`
+`brew install hugo`
 
-#### Run Hugo locally:
+For other platforms, please see Hugo's [Getting Started](https://gohugo.io/getting-started/installing/) docs.
 
-`npm run server`
-or
-`npm run test` to see stubbed in draft pages.
-
-or 
+#### Run Hugo locally
 
 `hugo serve -D`
 
-#### View Hugo locally
-
 Visit http://localhost:1313/ to see the site.
 
-#### Making Edits
+#### Create and edit content
+
+The easiest way to add content is with the `hugo new` command. You can create new content files in Hugo using the `hugo new` command. By default, Hugo will create new content files with at least date, title (inferred from the file name), and `draft = true`. This saves time and promotes consistency for sites using multiple content types. You can create your own [archetypes](https://gohugo.io/content-management/archetypes/) with custom preconfigured front matter fields as well.
+
+`hugo new a-chapter/my-page-title.md`
+
+The newly created content file will show up under the `/content/` directory. In the example above, the file would be `/content/a-chapter/my-page-title.md`.
 
 As you save edits to a page, the site will live-reload to show your changes.
 
-note: shift-reload may be necessary in your browser to reflect the latest changes.
+Note: shift-reload may be necessary in your browser to reflect the latest changes.
 
 ## License Summary
 
