@@ -1,7 +1,7 @@
 +++
 title = "Active User Journey"
 chapter = false
-weight = 0
+weight = 20
 +++
 
 
@@ -17,6 +17,9 @@ weight = 0
 - [ ] journey wait times.
 - [ ] flow vs journey consistency
 - [ ] clean up template creatiuon
+- [ ] publish journey flows
+- [ ] look at open stats etc
+- [ ] 
 ## Journey Creation (Active Users)
 
 In this section we are going to replicate a real life onboarding flow where we try to either "Re-engage" inactive users (see right hand red side of the diagram) by a sequence of emails or alternatively if the user is active on our site (see left hand side) we send a flow to get them to perform tasks which creates stickiness with the product.
@@ -150,6 +153,7 @@ Click on the Plus symbol below `Else` and chose ```Send email```.
 
 Select the ```Active-ReEngage2``` template and click `Save`
 ![activeJourney](/images/aJourney-send-reengage2.png)
+
 ### Complete Journey
 
 Once you have completed all of the steps above your journey should resemble the below image
