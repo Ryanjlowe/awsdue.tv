@@ -4,7 +4,6 @@ chapter = false
 weight = 20
 +++
 
-
 - [ ] Update onboarding workflow.
 - [ ] modify img path to /images" rahter than /images
 - [ ] remove symlink
@@ -20,6 +19,7 @@ weight = 20
 - [ ] publish journey flows
 - [ ] look at open stats etc
 - [ ] 
+
 ## Journey Creation (Active Users)
 
 In this section we are going to replicate a real life onboarding flow where we try to either "Re-engage" inactive users (see right hand red side of the diagram) by a sequence of emails or alternatively if the user is active on our site (see left hand side) we send a flow to get them to perform tasks which creates stickiness with the product.
@@ -37,7 +37,6 @@ When we created the Segment in the previous section our data CSV contained UserA
 ### Create Active Users Segment
 
 - [ ] get instructions
-
 
 ## Creating your first Journey - Active Users
 

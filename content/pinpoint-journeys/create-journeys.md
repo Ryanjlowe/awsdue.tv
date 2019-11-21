@@ -1,7 +1,7 @@
 +++
 title = "Create Journeys"
 chapter = false
-weight = 40
+weight = 10
 +++
 
 
@@ -17,11 +17,10 @@ weight = 40
 - [ ] journey wait times.
 - [ ] flow vs journey consistency
 - [ ] 
+
 ## Journeys
 
-In this section of the workshop we are going to build a journey. In order to do this section you **MUST** complete the previous Pinpoint basics lab as we will be using the segment we initially uploaded.
-
->In Amazon Pinpoint, a journey is a customized, multi-step engagement experience. When you create a journey, you start by choosing a segment that defines which customers will participate in the journey. After that, you add the activities that customers pass through on their journeys. Activities can include sending messages or splitting customers into groups based on their behaviors.
+In this section of the workshop we are going to build a journey. In order to do this section you **MUST** complete the previous Pinpoint Getting Started component as we will be using the Segment we  uploaded.
 
 We are going to replicate a real life onboarding flow where we try to either "Re-engage" inactive users (see right hand red side of the diagram) by a sequence of emails or alternatively if the user is active on our site (see left hand side) we send a flow to get them to perform tasks which creates stickiness with the product.
 
@@ -38,7 +37,9 @@ When we created the Segment in the previous section our data CSV contained UserA
 ### Create Active Users Segment
 
 - [ ] get instructions
+
 ### Create Inactive Users Segment
+
 - [ ] get instructions
 
 ## Creating your first Journey - Active Users
@@ -47,7 +48,6 @@ In this journey we have 3 different email templates we are going to send dependi
 
 ### Creating the message templates to send
 Before we create the Journey we are going to create new message templates following the same method we did in the previous section
-
 
 Create Message Template 1:  
    1.  **Template name**: ```Active-ReEngage```  

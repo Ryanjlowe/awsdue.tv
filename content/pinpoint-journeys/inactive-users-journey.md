@@ -1,5 +1,5 @@
 +++
-title = "Inactive User Journeys"
+title = "Inactive User Journey"
 chapter = false
 weight = 30
 +++
@@ -17,6 +17,7 @@ weight = 30
 - [ ] journey wait times.
 - [ ] flow vs journey consistency
 - [ ] 
+
 ## Journey Creation 2 (Inactive Users)
 
 In the previous stage we created the Journey for Active users. In this section we will be introducing other Activity types for the inactive segment in on the right hand side of the flow
