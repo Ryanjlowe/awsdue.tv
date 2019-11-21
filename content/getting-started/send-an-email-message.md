@@ -4,12 +4,6 @@ chapter = false
 weight = 30
 +++
 
-## to do:
-- [ ] fix region in urls
-- [ ] sandbox info
-- [ ] should we educate on endpoint limits
-- [ ] Test SMS image
-
 ## Send an email message
 
 In the menu bar on the left hand side click on `Test Messaging`.
