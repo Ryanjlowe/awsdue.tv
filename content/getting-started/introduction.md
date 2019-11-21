@@ -1,10 +1,10 @@
 +++
-title = "What We'll Build"
+title = "What we'll build"
 chapter = false
 weight = 10
 +++
 
-### Our Goal
+## Our Goal
 In this workshop, we'll build an app with features including:
 
 * 

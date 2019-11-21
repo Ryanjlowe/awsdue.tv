@@ -1,9 +1,9 @@
 +++
-title = "Getting Started"
+title = "Pinpoint Journeys"
 chapter = true
-weight = 20
+weight = 30
 +++
 
-# Getting Started
+# Pinpoint Journeys
 
 {{% children showhidden="false" %}}

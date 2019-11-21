@@ -1,7 +1,7 @@
 +++
 title = "Installs & Configs"
 chapter = false
-weight = 20
+weight = 30
 +++
 
 Before we begin coding, there are a few things we need to install, update, and configure in the Cloud9 environment.

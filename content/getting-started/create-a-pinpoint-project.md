@@ -1,5 +1,5 @@
 +++
-title = "Pinpoint Setup"
+title = "Create a Pinpoint Project"
 chapter = false
 weight = 20
 +++
@@ -9,8 +9,6 @@ weight = 20
 - [ ] sandbox info
 - [ ] should we educate on endpoint limits
 - [ ] Test SMS image
-
-## Step 1: Create Pinpoint Project
 
 **This workshop has been tested in {{INSERT REGION HERE}}**
 
@@ -25,24 +23,3 @@ weight = 20
 7. You are also able to send SNS via Pinpoint but as with Emails, you need to enable this first. To do this go to  `Settings -> SMS and Voice -> Edit` and enable the SMS channel for this project.
 
 You Pinpoint project is now ready to send messages.
-
-## Step 2: Sending some test messages
-
-
-In the menu bar on the left hand side click on `Test Messaging`.
-
-### Test Email
-
-1. Click on `Email`.
-2. The sender email address should already be configured following the setup in Lab 1.
-3. Enter the same email address in the destination as the sender (as we know this address is verified)
-4. Create a simple message and enter a subject line then click `Send message` - now check your inbox as you should have mail!![pinpointConsole](/images/message-template.png)
-
-### Test SMS
-
-1. Click on `SMS`
-2. Enter your Phone numbers
-3. Fill in a message body
-4. Click send message.
-
-

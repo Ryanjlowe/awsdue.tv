@@ -1,9 +1,9 @@
 +++
-title = "Creating A Journey"
+title = "Concepts"
 chapter = true
 weight = 30
 +++
 
-# Creating A Journey
+# Concepts in Amazon Pinpoint
 
 {{% children showhidden="false" %}}
