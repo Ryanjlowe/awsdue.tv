@@ -4,11 +4,7 @@ date: 2019-11-21T17:34:59+01:00
 weight: 20
 ---
 
-### Pinpoint Regions
+Amazon Pinpoint is available in the following regions:
+US East (N. Virginia), US West (Oregon), EU (Frankfurt), EU (Ireland), Asia Pacific (Sydney), and Asia Pacific (Mumbai). You must chose one of those regions to follow the workshop.
 
-Amazon Pinpoint available in the following regions:
-* US East (Virginia)
-* US West (Oregon)
-* EU (Frankfurt)
-* EU (Ireland)
-* Asia Pacific (Sydney)
+You can learn more about the AWS Global Infrastructure on [this interactive map](https://www.infrastructure.aws/).
