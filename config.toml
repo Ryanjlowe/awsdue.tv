@@ -10,6 +10,11 @@ theme = "learn"
   Subtitle = "Multichannel customer engagement using Amazon Pinpoint"
   themeVariant = "mine"
 
+# https://gohugo.io/getting-started/configuration/#configure-blackfriday
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
+
 [[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-home'></i> Amazon Pinpoint"
 identifier = "homepage"
