@@ -1,9 +1,9 @@
 +++
-title = "Pinpoint Journeys"
+title = "Advanced Journeys"
 chapter = true
 weight = 30
 +++
 
-# Pinpoint Journeys
+# Advanced Journeys
 
 {{% children showhidden="false" %}}
