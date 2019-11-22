@@ -26,7 +26,7 @@ Before we create the Journey we are going to create new message templates requir
 Create Message Template 1:  
    1.  **Template name**: ```Active-ReEngage```  
    2.  **Subject**: ```ActiveUsers-ReEngage Email 1```  
-   3.  **Message**: Copy the html from the following link.  
+   3.  **Message**: Copy the html from the following <a href="/email-templates/mailshot_1000_thanksfor.txt" target="_blank">link (will open new tab)</a>.
 
 Create Message Template 2:    
    1.  **Template name**: ```Active-ReferAFriend```  
