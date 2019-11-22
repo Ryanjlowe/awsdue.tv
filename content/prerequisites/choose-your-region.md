@@ -1,5 +1,5 @@
 ---
-title: "AWS regions"
+title: "Choose your region"
 date: 2019-11-21T17:34:59+01:00
 weight: 20
 ---
