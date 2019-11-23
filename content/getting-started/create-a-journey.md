@@ -1,7 +1,7 @@
 +++
 title = "Create a journey"
 chapter = false
-weight = 50
+weight = 90
 +++
 
 A journey is a customized, multi-step engagement experience. When you create a journey, you start by choosing a segment that defines which customers will participate in the journey. After that, you add the activities that customers pass through on their journeys. Activities can include sending messages or splitting customers into groups based on their behaviors.
