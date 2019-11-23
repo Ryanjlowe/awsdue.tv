@@ -22,7 +22,7 @@ url = "https://aws.amazon.com/pinpoint/"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-fw fa-book'></i> Amazon Pinpoint Documentation"
+name = "<i class='fas fa-fw fa-book'></i> Documentation"
 identifier = "documentation"
 url = "https://docs.aws.amazon.com/pinpoint/"
 weight = 20
@@ -46,7 +46,7 @@ url = "https://docs.aws.amazon.com/pinpoint/latest/apireference/welcome.html"
 weight = 50
 
 [[menu.shortcuts]]
-name = "&nbsp; <i class='fas fa-fw fa-bookmark'></i> SMS and Voice API Reference"
+name = "&nbsp; <i class='fas fa-fw fa-bookmark'></i> SMS and Voice API"
 identifier = "pinpoint-sms-voice-apireference"
 url = "https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/welcome.html"
 weight = 60
@@ -56,9 +56,3 @@ name = "<i class='fab fa-twitter fa-lg'></i> @awscloud"
 identifier = "twitter"
 url = "https://twitter.com/intent/user?screen_name=awscloud"
 weight = 80
-
-[[menu.shortcuts]]
-name = "<i class='fab fa-fw fa-github'></i> Workshop source"
-identifier = "github"
-url = "https://github.com/aws-samples/amazon-pinpoint-workshop"
-weight = 90
