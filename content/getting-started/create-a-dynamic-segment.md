@@ -1,7 +1,7 @@
 +++
 title = "Create a dynamic segment"
 chapter = false
-weight = 70
+weight = 55
 +++
 
 ## Create a segment
