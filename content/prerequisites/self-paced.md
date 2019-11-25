@@ -1,8 +1,16 @@
-+++
-title = "Create an AWS account"
-chapter = false
-weight = 10
-+++
+---
+title: "...on your own"
+weight: 20
+---
+
+### Running the workshop on your own
+
+{{% notice warning %}}
+Only complete this section if you run the workshop on your own.  
+If you attend an AWS hosted event, such as AWS re:Invent, or an AWS Immersion Day, go to [Start the workshop at an AWS event](../aws-event/).
+{{% /notice %}}
+
+### Create an AWS account
 
 {{% notice warning %}}
 Your account must have the ability to create new IAM roles and scope other IAM permissions.

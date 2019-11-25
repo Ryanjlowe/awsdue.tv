@@ -1,0 +1,42 @@
+Description:
+  IAM role for SageMaker to create IAM roles
+
+Parameters:
+  AppEnvironmentName:
+    Description: An environment name that will be prefixed to resource names
+    Type: String
+    Default: "Amazon Personalize Lab"
+
+Resources:
+  ExtraIamForSagemaker:
+    Type: 'AWS::IAM::Policy'
+    Properties:
+      PolicyName: ExtraIamForSagemaker
+      PolicyDocument:
+        Statement:
+          - Effect: Allow
+            Action:
+              - 'iam:CreateRole'
+              - 'iam:AttachRolePolicy'
+              - 'iam:PassRole'
+            Resource: '*'
+      Roles:
+        - !Ref PersonalizeSagemakeRole
+
+  PersonalizeSagemakeRole:
+    Type: 'AWS::IAM::Role'
+    Properties:
+      RoleName: "AmazonLabSageMakerRole"
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - sagemaker.amazonaws.com
+            Action:
+              - 'sts:AssumeRole'
+      Path: /
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonS3FullAccess
+        - arn:aws:iam::aws:policy/service-role/AmazonPersonalizeFullAccess
+        - arn:aws:iam::aws:policy/AmazonSageMakerFullAccess
