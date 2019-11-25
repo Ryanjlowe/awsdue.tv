@@ -65,7 +65,7 @@ Following sending an email you are likely to want to pause before you do followu
 
 ### 5. Yes/No Split
 
-In the previous section we added a Multivariate split to allow multiple paths through based on the condition. For this journey we want to establish whether the user still remains in the `inactiveUsers` dynamic segment. If they have left the segment the journey for that user should end.
+In the previous section we added a Multivariate split to allow multiple paths through based on the condition. For this journey we want to establish whether the user still remains in the `inactiveUsers` dynamic segment we created [earlier](/getting-started/create-a-dynamic-segment/). If they have left the segment the journey for that user should end.
 
 We will be performing a "Segment" condition - this means we will be perform logic to determine if the user is in that segment.  Select condition type `Segment` and chose the `inactiveUsers` segment.
 
