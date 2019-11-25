@@ -1,55 +1,32 @@
 +++
-title = "Active User Journey"
+title = "Engage user"
 chapter = false
 weight = 20
 +++
 
-- [ ] Update onboarding workflow.
-- [ ] modify img path to /images" rahter than /images
-- [ ] remove symlink
-- [ ] dynamic segments - 'and who have used your app within the past 30 days.' also add content.
-- [ ] ensure there is a message template section in pinpoint basics
+
 - [ ] upload Message Templates
 - [ ] remove journey exit from full diagram
-- [ ] check that segments down stream can change once a journey has started
 - [ ] inacurate total endpoints
 - [ ] journey wait times.
 - [ ] flow vs journey consistency
 - [ ] clean up template creatiuon
 - [ ] publish journey flows
 - [ ] look at open stats etc
-- [ ] 
+- [ ] insert link to dynamic segment
+- [ ] ADD PUBLISH
+  
+In this journey we have 3 different email templates we are going to send depending on user engagement/activity. We believe anyone in this journey has engaged with our site before and we are trying to get them to re-engage and spread the word about the site
 
-## Journey Creation (Active Users)
 
-In this section we are going to replicate a real life onboarding flow where we try to either "Re-engage" inactive users (see right hand red side of the diagram) by a sequence of emails or alternatively if the user is active on our site (see left hand side) we send a flow to get them to perform tasks which creates stickiness with the product.
+## Creating the message templates to send
 
-![workflow](/images/OnboardingFlow_V1.png)
-
-## Creating a Dynamic Segment
-
-In order to be able to trigger the different Journeys we are going to use dynamic segments.
-
-> Dynamic segments are based on the data that your apps provide to Amazon Pinpoint. When you create a dynamic segment, you choose the criteria that define that segment. For example, you could specify all customers who use version 2.0 of your app on an Android device, and who have used your app within the past 30 days. Amazon Pinpoint continuously re-evaluates your segments as your app records new customer interactions. As a result, the size and membership of each segment changes over time. For information about integrating your apps with Amazon Pinpoint, see Integrating Amazon Pinpoint with Your Application in the Amazon Pinpoint Developer Guide.
-
-When we created the Segment in the previous section our data CSV contained UserAttributes that we are going to create a Dynamic Segment from, in this example the segment is fairly basic but you have the ability within Pinpoint to create multifaceted segments which can then be used to trigger the start of a journey.
-
-### Create Active Users Segment
-
-- [ ] get instructions
-
-## Creating your first Journey - Active Users
-
-In this journey we have 3 different email templates we are going to send depending on user engagement/activity. In the hypothetical section the user has engaged with our site before and we are trying to get them to re-engage and spread the word about the site
-
-### Creating the message templates to send
-Before we create the Journey we are going to create new message templates following the same method we did in the previous section
-
+Before we create the Journey we are going to create new message templates required for the emails. We will follow the same process as we did in the `Getting Started` section
 
 Create Message Template 1:  
    1.  **Template name**: ```Active-ReEngage```  
    2.  **Subject**: ```ActiveUsers-ReEngage Email 1```  
-   3.  **Message**: Copy the html from the following link.  
+   3.  **Message**: Copy the html from the following <a href="/email-templates/mailshot_1000_thanksfor.txt" target="_blank">link (will open new tab)</a>.
 
 Create Message Template 2:    
    1.  **Template name**: ```Active-ReferAFriend```  
@@ -61,7 +38,7 @@ Create Message Template 3:
    2.  **Subject**: ```ActiveUsers-ReEngage Email 2```  
    3.  **Message**: Copy the html from the following link.  
 
-### Building the Journey
+## Building the Journey
 
 From within the console on the left hand navigation bar click on "Journeys" and subsequently click on `Create Journey` on the top right hand side of the page.
 
@@ -72,7 +49,7 @@ Before we start building the Journey lets give it a name by editing the box on t
   
 ![createJourney](/images/aJourney-create-journey.png).  
 
-#### 1. Journey Entry
+### 1. Journey Entry
 
 The first stage of creating a Journey is defining the Journey Entry point, what it is that causes members to enter the journey.
 
@@ -157,15 +134,4 @@ Select the ```Active-ReEngage2``` template and click `Save`
 
 Once you have completed all of the steps above your journey should resemble the below image
 ![activeJourney](/images/aJourneyFull.png)
-
-
-![pinpointConsole](/images/samplejourney-separateemailbasedonsegment.png)
-following one could use yes/no rather than mv so give an example of an MV split which could be if link click / if email open . if email delivered
-![pinpointConsole]/images/samplejourney-separateemailbasedonsegment.png)
-
-* create templates - only email supported at the moment
-* 
-* chose entry trigger
-- [x] can we embed an SMS No. It’ll probably be next year. 
-
 
