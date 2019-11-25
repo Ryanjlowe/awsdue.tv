@@ -9,7 +9,8 @@ In this journey we have 3 different email templates we are going to send dependi
 
 ## Creating the message templates to send
 
-Before we create the Journey we are going to create new message templates required for the emails. We will follow the same process as we did in the `Getting Started` section for [Message Templates](/getting-started/create-a-message-template/)
+
+Before we create the Journey we are going to create new message templates required for the emails. We will follow the same process as we did in the `Getting Started` section
 
 Create Message Template 1:  
    1.  **Template name**: ```Active-ReEngage```  
@@ -127,3 +128,4 @@ If there are any errors you will be given a message to explain where to fix in y
 You can now click `Publish`, once you publish a journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
 
 ![activeJourney](/images/aJourney-publish.png)
+

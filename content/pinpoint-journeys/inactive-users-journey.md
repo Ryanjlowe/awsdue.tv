@@ -85,10 +85,12 @@ We will leave the "No" branch empty and the user journey ends.
 
 Following the same process as 5 & 6 introduce another Yes/No Split as a consequence of a Segment condition for the ```Inactive-OfferHelp``` email.
 
+
 ## Complete Journey
 
 Once you have completed all of the steps above your journey should resemble the below image
 ![activeJourney](/images/iJourney-complete.png)
+
 
 ### Review and Publish
 
@@ -101,3 +103,4 @@ If there are any errors you will be given a message to explain where to fix in y
 You can now click `Publish`, once you publish a journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
 
 ![activeJourney](/images/aJourney-publish.png)
+
