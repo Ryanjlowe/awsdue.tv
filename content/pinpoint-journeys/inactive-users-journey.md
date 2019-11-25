@@ -48,23 +48,18 @@ In this journey we are going to use the `InActive Users` segment we created earl
 ### 2. Adding Activities
 
 Users can now successfully enter the Journey. To add subsequent steps to the journey simply click on the + symbol and you will be able to chose the type of activity you wish to build.
-- [ ] add plus symbol image.
 
-![createJourney](/images/journey-activities.png)
+![createJourney](/images/add-activity.png)
 
 ### 3. Wait
 
 Within Pinpoint we give you the facility to perform a "Wait" stage, this means that instead of sending a number of emails concurrently we can specify we want the journey to continue after a period of time or at a specific time. Click on the Plus symbol and chose ```Wait```.
-
-- [ ] add details here - confirming how we will do the wait
 
 ![createJourney](/images/aJourney-wait.png)
 
 ### 4. Wait
 
 Following sending an email you are likely to want to pause before you do followup activity - as with step 3 introduce another wait state to the Journey.
-
-- [ ] add details here - confirming how we will do the wait
 
 ![createJourney](/images/aJourney-wait.png)
 
@@ -88,10 +83,21 @@ We will leave the "No" branch empty and the user journey ends.
 
 ### 7. Add subsequent Inactive User steps
 
-Following the same process as 5 & 6 introduce another Yes/No Split as a consequence of a Segment condition for the ```Inactive-OfferHelp``` email. 
-
+Following the same process as 5 & 6 introduce another Yes/No Split as a consequence of a Segment condition for the ```Inactive-OfferHelp``` email.
 
 ## Complete Journey
 
 Once you have completed all of the steps above your journey should resemble the below image
 ![activeJourney](/images/iJourney-complete.png)
+
+### Review and Publish
+
+If you have successfully followed the above steps you will now be in a position to publish your journey. At the top right of the screen click on Review.
+![activeJourney](/images/aJourney-review_first.png)
+
+If there are any errors you will be given a message to explain where to fix in your journey, if not your journey will be ready to go, click on Next.
+![activeJourney](/images/aJourney-review.png)
+
+You can now click `Publish`, once you publish a journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
+
+![activeJourney](/images/aJourney-publish.png)
