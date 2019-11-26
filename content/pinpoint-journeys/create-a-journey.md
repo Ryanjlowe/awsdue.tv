@@ -1,7 +1,7 @@
 +++
 title = "Create a journey"
 chapter = false
-weight = 90
+weight = 11
 +++
 
 Create multi-step journeys that send messages to your customers based on their attributes, behaviors, and activities.
