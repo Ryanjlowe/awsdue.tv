@@ -6,7 +6,7 @@ weight: 10
 
 Amazon Pinpoint enables marketers and developers to deliver customer-centric engagement experiences. Better experiences lead to stronger relationships with your customers and reduce customer churn.
 
-In today’s digitally transformed world, it’s more important than ever to have a deep understanding of your customers and to engage them with personalized messages through the channels that they prefer. 
+Amazon Pinpoint is an AWS service that you can use to engage with your customers across multiple messaging channels. You can use Amazon Pinpoint to send push notifications, emails, SMS text messages, and voice messages.
 
 Amazon Pinpoint helps you meet your customer engagement goals through features including:
 

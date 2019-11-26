@@ -1,7 +1,5 @@
 +++
 title = "Amazon Pinpoint Workshop"
-date = 2019-11-18T00:41:38+01:00
-weight = 5
 chapter = true
 +++
 
