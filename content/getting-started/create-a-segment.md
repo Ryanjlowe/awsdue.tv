@@ -7,7 +7,7 @@ weight = 50
 Reach the right audience for your messages by defining audience segments. A segment designates which users receive the messages that are sent from a campaign or journey. You can define dynamic segments based on data that's reported by your application, such as operating system or mobile device type. You can also import static segments that you define outside of Amazon Pinpoint.
 
 In the next step you'll import segment that contains several users with user attributes.
-
+   
 ### Prepare your segment
 
 In this workshop you will start with a list of users in a CSV file. This is useful in situations where you define user segments outside of Amazon Pinpoint and want to engage your users with Amazon Pinpoint campaigns.  
@@ -15,14 +15,25 @@ In a couple of minutes, you'll send customized messages to these users.
 
 To get started with your segment import you need to define the details of your users and endpoints. This can be an email address, or another destination that can receive messages, such as mobile device identifier, or mobile phone number. Let's keep it simple and go with email.
 
-1. Download the [example CSV file](/csv/segment.csv) and open it in a text editor on your computer.
-1. Add a couple of users using the wildcard local parts notation you saw when you sent a test message.  
-Example: If you verified `fred@domain`, then `fred+foo@domain`, `fred+bar@domain`, etc. will also work.
-1. Save the file and remember its location. You will need this in the next step.
+1. Download the [sample CSV file](/csv/activeSegment.csv) and open it in a text editor on your computer.
+
+1. Add/edit a couple of users using the wildcard local parts notation you saw when you sent a test message.  
+Edit the `Address` column in the CSV file to reflect email addresses you verified in the [Configure Email section ](../configure-email/).  
+Example: If you verified `fred@domain`, then `fred+foo@domain`, `fred+bar@domain`, etc. will also work.  
+```csv
+ChannelType,Address,User.UserId,User.UserAttributes.FirstName,User.UserAttributes.LastName,User.UserAttributes.age,User.UserAttributes.isActive
+EMAIL,Mark+pinpoint3@emaildomain.com,Userid3,Mark,Price,28,
+EMAIL,Raymond+pinpoint1@emaildomain.com,userid1,Raymond,Phillips,35,TRUE
+EMAIL,Sue+pinpoint2@emaildomain.com,userid2,Sue,Sherman,31,FALSE
+```
+Please ensure that you have at least two verified email addresses for userid1 and userid2.  
+Finally, double check to make sure that all email addresses you entered are valid. 
+
+1. Save the file and remember its location on your computer. You will need this in the next step.
 
 ### Import a segment
 
-You define the endpoints or user IDs that belong to your segment in a comma-separated values (CSV) or JSON file. Then, you import the file into Amazon Pinpoint to create the segment.
+To import a segment, you define the endpoints or user IDs that belong to your segment in a comma-separated values (CSV) or JSON file. Then you import the file into Amazon Pinpoint to create the segment.
 
 Since you're uploading a single file under 1GB, you can upload the file directly to the console.
 
@@ -46,24 +57,3 @@ You have imported users and endpoints into your project. Your project is set up 
 <!-- 
 To learn more about segments, visit [Amazon Pinpoint Segments](https://docs.aws.amazon.com/pinpoint/latest/userguide/segments.html) in the Amazon Pinpoint User Guide.
 -->
-
-## Create a Segment
-
-1. Click here to download [the sample csv](/csv/activeSegment.csv). 
-2. Modify the CSV to update the `Address` column to reflect email addresses you configured in the [Configure Email section ](/getting-started/configure-email/). For the following workshops you will need at least two verified email addresses for userid1 and userid2.
-   
-## Upload a Segment
-
-On the menu bar in the left hand side chose `Segments` and then click on the `Create a segment` button.
-
-![createJourney](/images/segment-create.png)
-
-Click on `Import a Segment`
-
-![createJourney](/images/create-segment.png) 
-
-Choose upload files from your computer and find the CSV you edited in the earlier part of this lab and click `Create Segment`
-
-![createJourney](/images/create-segment-upload.png). 
-
-You have now created a new segment we will use in later parts of this workshop.
