@@ -1,4 +1,4 @@
 ChannelType,Address,User.UserId,User.UserAttributes.FirstName,User.UserAttributes.LastName,User.UserAttributes.age,User.UserAttributes.isActive
-EMAIL,Mark+pinpoint3@emaildomain.com,Userid3,Mark,Price,28,
 EMAIL,Raymond+pinpoint1@emaildomain.com,userid1,Raymond,Phillips,35,TRUE
 EMAIL,Sue+pinpoint2@emaildomain.com,userid2,Sue,Sherman,31,FALSE
+EMAIL,Mark+pinpoint3@emaildomain.com,userid3,Mark,Price,28,FALSE
