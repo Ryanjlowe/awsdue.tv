@@ -4,12 +4,7 @@ chapter = false
 weight = 50
 +++
 
-A segment is a group of your customers that share certain attributes. For example, a segment might contain all of your customers who use version 2.0 of your app on an Android device, or all customers who live in the city of Los Angeles.
-
-You can create two types of segments:
-
-1. Dynamic segments, based on attributes that you define. As your users send events or their attributes change, the size of your dynamic segment(s) may change.
-1. Imported segments, based on static CSV or JSON files.
+Reach the right audience for your messages by defining audience segments. A segment designates which users receive the messages that are sent from a campaign or journey. You can define dynamic segments based on data that's reported by your application, such as operating system or mobile device type. You can also import static segments that you define outside of Amazon Pinpoint.
 
 In the next step you'll import segment that contains several users with user attributes.
 
@@ -45,6 +40,8 @@ Since you're uploading a single file under 1GB, you can upload the file directly
 ![Name your segment and complete the import](/images/complete-the-import.png)
 
 1. After a couple of seconds your segment will be imported. Click on the segment name to view its details.
+
+You have imported users and endpoints into your project. Your project is set up to engage with these users based on rules and conditions that you will define next.
 
 <!-- 
 To learn more about segments, visit [Amazon Pinpoint Segments](https://docs.aws.amazon.com/pinpoint/latest/userguide/segments.html) in the Amazon Pinpoint User Guide.
