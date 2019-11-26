@@ -147,20 +147,3 @@ div.notices p:first-child:before {
     font-weight: 900; /* Fix version 5.0.9 */
     left: 10px;
 }
-
-
-[data-url="/pinpoint-journeys/active-users-journey/"] img {
-    width: 50%;
-}
-[data-url="/pinpoint-journeys/inactive-users-journey/"] img {
-    width: 50%;
-}
-[data-url="/getting-started/create-a-segment/"] img {
-    width: 50%;
-}
-
-[data-url="/getting-started/create-a-dynamic-segment/"] img {
-    width: 50%;
-}
-
-
