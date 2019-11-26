@@ -1,5 +1,0 @@
-ChannelType,Address,EndpointStatus,OptOut,Location.Country,Demographic.Make,Demographic.Platform,EffectiveDate,User.UserId,User.UserAttributes.age,User.UserAttributes.artist,User.UserAttributes.gender,User.UserAttributes.hasListened,User.UserAttributes.name,User.UserAttributes.name
-SMS,447919991192,ACTIVE,NONE,UK,Apple,ios,2019-10-21T08:31:08.757Z,userid1,35,Muse,Male,TRUE,Neil,Lock
-EMAIL,neil+pinpoint1@xxx.co.uk,ACTIVE,NONE,UK,Apple,ios,2019-10-21T12:58:53.089Z,userid1,35,Muse,Male,TRUE,Neil,Lock
-EMAIL,neil+pinpoint2@xxx.co.uk,ACTIVE,NONE,UK,Apple,ios,2019-10-21T12:58:53.089Z,userid2,31,Green Day,Male,TRUE,Neil1,Lock1
-EMAIL,neil+pinpoint3@xx.co.uk,ACTIVE,NONE,UK,Apple,ios,2019-10-21T12:58:53.089Z,Userid3,28,,Male,FALSE,Neil2,Lock2
