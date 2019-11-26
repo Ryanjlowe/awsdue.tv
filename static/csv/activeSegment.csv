@@ -1,5 +1,4 @@
 ChannelType,Address,User.UserId,User.UserAttributes.FirstName,User.UserAttributes.LastName,User.UserAttributes.age,User.UserAttributes.isActive
-EMAIL,neil+pinpoint3@neillock.co.uk,Userid3,Mickey,Mouse,28,
-EMAIL,neil+pinpoint1@neillock.co.uk,userid1,Donald,Duck,35,TRUE
-EMAIL,neil+pinpoint2@neillock.co.uk,userid2,Minnie,Mouse,31,FALSE
-SMS,447919991192,userid1,Donald,Duck,35,TRUE
+EMAIL,mickey+pinpoint3@emaildomain.com,Userid3,Mickey,Mouse,28,
+EMAIL,mickey+pinpoint1@emaildomain.com,userid1,Donald,Duck,35,TRUE
+EMAIL,mickey+pinpoint2@emaildomain.com,userid2,Minnie,Mouse,31,FALSE
