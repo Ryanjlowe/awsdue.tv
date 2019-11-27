@@ -5,9 +5,9 @@ weight = 20
 +++
 
 
-In this journey we have 4 different email templates we are going to send depending on user engagement/activity. We believe anyone in this journey has engaged with our site before and we are trying to get them to re-engage and spread the word about your site.
+In this Journey we have 4 different email templates we are going to send depending on user engagement/activity. We believe anyone in this Journey has engaged with your product before as they are part of a dynamic segment we created earlier.  We are trying to get them to re-engage and spread the word about your product.
 
-We are going to be building out the Left Hand Side of our flow diagram [here](/pinpoint-journeys/create-journeys/).
+We are going to be building out the left hand side of our flow diagram [here](/pinpoint-journeys/create-journeys/).
 
 ## Creating the message templates to send
 
@@ -48,9 +48,9 @@ Before we start building the Journey lets give it a name by editing the box on t
 
 ### 1. Journey Entry
 
-The first stage of creating a Journey is defining the Journey Entry point, what it is that causes members to enter the journey.
+The first stage of creating a Journey is defining the **Journey Entry point**. This is what causes users to enter the Journey.
 
-In this journey we are going to use the **Active Users** segment we created earlier in the [Create Dynamic Segment](/getting-started/create-a-dynamic-segment/) and specify that we want new users to be added to the segment automatically every hour. In doing this it is possible to have Journeys run on a repeatable fashion without you needing to schedule the task. It is also possible to run the Journey as a 'One off' by choosing to never add new segment members.
+In this Journey we are going to use the **Active Users** segment we created earlier in the [Create Dynamic Segment](/getting-started/create-a-dynamic-segment/) section of the workshop and specify that we want new users to be added to the segment automatically every hour. In doing this it is possible to have Journeys run on a repeatable fashion without you needing to worry about scheduling tasks.
 
 1. Chose the **activeUsers** Segment
 2. Specify to run once every **1 hours**
@@ -59,16 +59,16 @@ In this journey we are going to use the **Active Users** segment we created earl
 
 #### 2. Adding Activities
 
-Users can now successfully enter the Journey. To add subsequent steps to the journey simply click on the + symbol and you will be able to chose the type of activity you wish to build.
+Users can now successfully enter the Journey. To add subsequent steps to the Journey simply click on the + symbol and you will be able to chose the type of activity you wish to build.
 ![createJourney](/images/add-activity.png)
 
-There are a number of different activities you can chose from as stages in the journey:
+There are a number of different activities you can chose from as stages in the Journey:
 
 ![createJourney](/images/journey-activities.png)
 
 #### 3. Wait
 
-Within Pinpoint we give you the facility to perform a "Wait" stage, this means that instead of sending a number of emails concurrently we can specify we want the journey to continue after a period of time or at a specific time. Click on the Plus symbol and chose **Wait**.
+Within Pinpoint we give you the facility to perform a "Wait" stage, this means that instead of sending a number of emails concurrently we can specify we want the Journey to continue after a period of time or at a specific time. Click on the Plus symbol and chose **Wait**.
 
 ![createJourney](/images/aJourney-wait.png)
 
@@ -90,7 +90,7 @@ Following sending an email you are likely to want to pause before you do followu
 
 Within Journeys you can create a flow which is determined by certain criteria that can be defined in the flow. With a Multivariate split the customer can go down one of up to four paths and an 'other' path. We do offer a other ways to navigate via user/engagement criteria (Yes/No Split, Random Split).
 
-In this example we will use a multivariate split because we are going to send the user on the journey based on one of three different criteria:  
+In this example we will use a multivariate split because we are going to send the user on the Journey based on one of three different criteria:  
 A: **User clicked on links in email sent**  
 B: **User Opened email**  
 Other: **User did not engage with the email we sent**    
@@ -123,18 +123,18 @@ Select the **Active-ReEngage2** template and click **Save**
 
 ### Complete Journey
 
-Once you have completed all of the steps above your journey should resemble the below image
+Once you have completed all of the steps above your Journey should resemble the below image
 ![activeJourney](/images/aJourneyFull.png)
 
 ### Review and Publish
 
-If you have successfully followed the above steps you will now be in a position to publish your journey. At the top right of the screen click on Review.
+If you have successfully followed the above steps you will now be in a position to publish your Journey. At the top right of the screen click on Review.
 ![activeJourney](/images/aJourney-review_first.png)
 
-If there are any errors you will be given a message to explain where to fix in your journey, if not your journey will be ready to go, click on Next.
+If there are any errors you will be given a message to explain where to fix in your journey, if not your Journey will be ready to go, click on Next.
 ![activeJourney](/images/aJourney-review.png)
 
-You can now click **Publish**, once you publish a journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
+You can now click **Publish**, once you publish a Journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
 
 ![activeJourney](/images/aJourney-publish.png)
 
