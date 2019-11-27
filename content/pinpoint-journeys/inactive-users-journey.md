@@ -1,7 +1,7 @@
 +++
 title = "Activate user"
 chapter = false
-weight = 30
+weight = 40
 +++
 
 
