@@ -1,5 +1,12 @@
-<!-- Partial intended to be overwritten with tags loaded at the end of the page loading (usually for Javascript) 
+<!-- Partial intended to be overwritten with tags loaded at the end of the page loading (usually for Javascript) -->
 <script>
-    console.log("running some javascript");
+    // Open email templates in new window
+    var content = document.getElementById("body-inner");
+    var links = content.getElementsByTagName("a");
+
+    for (var i = 0, linksLength = links.length; i < linksLength; i++) {
+        if (links[i].pathname.startsWith("/email-templates/")) {
+            links[i].target = '_blank';
+        } 
+    }
 </script>
--->
