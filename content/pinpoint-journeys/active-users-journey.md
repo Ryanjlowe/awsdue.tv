@@ -20,7 +20,9 @@ Create Message Template 1:
 Create Message Template 2:    
    1.  **Template name**: ```Active-ReferAFriend```  
    2.  **Subject**: ```ActiveUsers-Refer A Friend```  
-   3.  **Message**: Copy the html from the following link.  
+   3.  **Message**: Copy the html from the following link.  <a href="/email-templates/mailshot_1001_Active-ReferAFriend.txt" target="_blank">link (will open new tab)</a>
+
+
 
 Create Message Template 3:  
    1.  **Template name**: ```Active-ReEngage2```  
