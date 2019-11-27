@@ -4,15 +4,13 @@ weight: 40
 ---
 
 In the menu bar on the left hand side click on **Test Messaging** and select the **SMS** channel.
+![Test Messaging: SMS Channel](/images/test-messaging-sms-channel.png)
 
-1. Enter your phone number as the recipient. (including international region code)
+1. Select **Phone numbers** as **Destination type**, and enter your phone number as the recipient. Include your country code, and area code, if applicable.
 
-1. Fill in a message body
+1. Select **Transactional** as **Message type** to optimizes the message delivery for highest reliability. **Create a new message** and write a simple **Message**.
+![Create a test SMS message](/images/test-messaging-sms.png) 
 
-1. Configure the message details and write your SMS.
+1. Click the **Send message** button and check your phone.
 
-1. Click the **Send message** button.
-
-1. Now check your phone as you should have a message.
-
-![testsms](/images/test_sms.png) 
+You have received your first SMS from Amazon Pinpoint.
