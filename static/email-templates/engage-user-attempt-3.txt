@@ -48,7 +48,7 @@
                 <td class="container" style="clear:both!important;display:block!important;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0 auto!important;max-width:602px!important;padding:0" bgcolor="#FFFFFF">
                     <div class="content" style="border-left:1px solid #c9cfd0;border-right:1px solid #c9cfd0;border-top:1px solid #c9cfd0;display:block;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:1rem auto 0 auto;max-width:600px;padding:10px 10px 0px 10px">
                   
-                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:600;margin:0;margin-bottom:15px;padding:0">Email: ActiveUsers-Discount Code</h1>
+                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:600;margin:0;margin-bottom:15px;padding:0">Email: EngageUsers-Discount Code</h1>
                         
 
                     </div>

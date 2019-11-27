@@ -1,106 +1,109 @@
 +++
 title = "Activate user"
 chapter = false
-weight = 30
+weight = 40
 +++
 
 
-In this journey we have 3 different email templates we are going to send depending on whether the user re-engages with the site. In this journey, if at any point the user engages with the site they will become an "Active" user and will then start flowing through the Active journey we created previously.
+In this Journey there are 2 different email templates that we are going to send your users to try get them to re-engage with your product. During this Journey if the user becomes an **Engaged user** (ie visits your site) they will exit this Journey and will move into the [Engage User Journey](/pinpoint-journeys/engage-users-journey/).
+
 
 ## Creating the message templates to send
-Before we create the Journey we are going to two create new message templates following the same method we did in the previous section
+
+Before we create the Journey we are going to two create new message templates following the same method we did in the previous section as we did in the [Getting Started](/getting-started/create-a-message-template/) section.
 
 Create Message Template 1:  
-   1.  **Template name**: ```Inactive-DiscountCode```  
-   2.  **Subject**: ```Inactive-Discount code```  
-   3.  **Message**: Copy the html from the following link.  
+   1. **Template name**: ```Activate-DiscountCode```  
+   2. **Subject**: ```Activate-Discount code```  
+   3. **Message**: Copy the html from the following <a href="/email-templates/activate-user-attempt-1.txt" target="_blank">link (will open new tab)</a>.
 
-Create Message Template 2:    
-   1.  **Template name**: ```Inactive-OfferHelp```  
-   2.  **Subject**: ```Inactive-Offer Help```  
-   3.  **Message**: Copy the html from the following link.  
-
-
+Create Message Template 2:  
+   1. **Template name**: ```Activate-OfferHelp```  
+   2. **Subject**: ```Activate-Offer Help```  
+   3. **Message**: Copy the html from the following <a href="/email-templates/activate-user-attempt-2.txt" target="_blank">link (will open new tab)</a>.
 
 ## Building the Journey
 
-From within the console on the left hand navigation bar click on "Journeys" and subsequently click on `Create Journey` on the top right hand side of the page.
+From within the console on the left hand navigation bar click on "Journeys" and subsequently click on **Create Journey** on the top right hand side of the page.
 
 ![createJourney](/images/create-journey.png)
 
-Before we start building the Journey lets give it a name by editing the box on the top right and call the Journey `Inactive Users`.
+Before we start building the Journey lets give it a name by editing the box on the top right and call the Journey ```Activate Users```.
   
-![createJourney](/images/iJourney-setup.png).  
+![createJourney](/images/iJourney-setup.png)
 
 ### 1. Journey Entry
 
-The first stage of creating a Journey is defining the Journey Entry point, what it is that causes members to enter the journey.
+The first stage of creating a Journey is defining the Journey Entry point, what it is that causes members to enter the Journey.
 
-In this journey we are going to use the `InActive Users` segment we created earlier and specify that we want new users to be added to the segment automatically every hour. In doing this it is possible to have Journeys run on a repeatable fashion without you needing to schedule the task. It is also possible to run the Journey as a 'One off' by choosing to never add new segment members.
+In this Journey we are going to use the **InActive Users** segment we created earlier and specify that we want new users to be added to the segment automatically every hour. In doing this it is possible to have Journeys run on a repeatable fashion without you needing to schedule the task. It is also possible to run the Journey as a 'One off' by choosing to never add new segment members.
 
-1. Chose the `inactiveUsers` Segment
-2. Specify to run once every `1` `hours`
-3. If you add a helpful description when the flow item in the Journey folds up in the interface you can read a description of what that flow was doing. Enter `Enter the Inactive User Dynamic Segment`.
-4. Click `Save`
+1. Chose the **inactiveUsers** Segment
+2. Specify to run once every **1 hours**
+3. Click **Save**.
 
-![createJourney](/images/iJourney-inactiveSegment.png).
+![createJourney](/images/iJourney-inactiveSegment.png)
 
 ### 2. Adding Activities
 
-Users can now successfully enter the Journey. To add subsequent steps to the journey simply click on the + symbol and you will be able to chose the type of activity you wish to build.
+Users can now successfully enter the Journey.
+
+1. Click on the **+** Symbol
 
 ![createJourney](/images/add-activity.png)
 
 ### 3. Wait
 
-Within Pinpoint we give you the facility to perform a "Wait" stage, this means that instead of sending a number of emails concurrently we can specify we want the journey to continue after a period of time or at a specific time. Click on the Plus symbol and chose ```Wait```.
+Within Pinpoint we give you the facility to perform a **Wait** stage, this means that instead of sending a number of emails concurrently we can specify we want the Journey to continue after a period of time or at a specific time.  
+
+1. Click on the Plus symbol and chose **Wait**.
 
 ![createJourney](/images/aJourney-wait.png)
 
-### 4. Wait
+### 4. Yes/No Split
 
-Following sending an email you are likely to want to pause before you do followup activity - as with step 3 introduce another wait state to the Journey.
+We want to establish whether the user still remains in the **inactiveUsers** dynamic segment we created [earlier](/getting-started/create-a-dynamic-segment/). If they have left this segment the Journey for that user should end.
 
-![createJourney](/images/aJourney-wait.png)
+We will be performing a **Segment condition type** - this means we will be perform logic to determine if the user is in that segment.  
 
-### 5. Yes/No Split
-
-In the previous section we added a Multivariate split to allow multiple paths through based on the condition. For this journey we want to establish whether the user still remains in the `inactiveUsers` dynamic segment we created [earlier](/getting-started/create-a-dynamic-segment/). If they have left the segment the journey for that user should end.
-
-We will be performing a "Segment" condition - this means we will be perform logic to determine if the user is in that segment.  Select condition type `Segment` and chose the `inactiveUsers` segment.
+1. Select condition type **Segment**  
+2. Chose the **inactiveUsers** segment.
+3. Click **Save**.
 
 ![activeJourney](/images/iJourney-yesno.png)
 
-### 6. Send Email
+### 5. Send Email
 
-On the "Yes" branch we now want to send a followup email  so we are going to send out the ```Inactive-DiscountCode``` Message we configured earlier.  Click on the Plus symbol and chose ```Send email```.
+On the **"Yes"** branch we now want to send a followup email so we are going to send out the **Activate-DiscountCode** Message we configured earlier. 
 
-Select the ```Inactive-DiscountCode``` template and click `Save`
+1. Click on the Plus symbol below the green Yes box.   
+2. Choose **Send email**.  
+3. Select the **Activate-DiscountCode** template  
+4. Choose Sender email address configured in the Getting started Lab  
+5. Click **Save**
 
 ![createJourney](/images/iJourney-send-discount.png)
 
-We will leave the "No" branch empty and the user journey ends.  
+If the user is **NOT** in the inacetiveUsers segment we want the Journey to end so we will not add a step below the red No box. The user Journey will end.  
 
-### 7. Add subsequent Inactive User steps
+### 6. Add subsequent Inactive User steps
 
-Following the same process as 5 & 6 introduce another Yes/No Split as a consequence of a Segment condition for the ```Inactive-OfferHelp``` email.
-
+Following the same process as 5 & 6 introduce another Yes/No Split as a consequence of a Segment condition for the **Activate-OfferHelp** email.
 
 ## Complete Journey
 
-Once you have completed all of the steps above your journey should resemble the below image
+Once you have completed all of the steps above your Journey should resemble the below image
 ![activeJourney](/images/iJourney-complete.png)
-
 
 ### Review and Publish
 
-If you have successfully followed the above steps you will now be in a position to publish your journey. At the top right of the screen click on Review.
+If you have successfully followed the above steps you will now be in a position to publish your Journey. At the top right of the screen click on Review.
 ![activeJourney](/images/aJourney-review_first.png)
 
-If there are any errors you will be given a message to explain where to fix in your journey, if not your journey will be ready to go, click on Next.
+If there are any errors you will be given a message to explain where to fix in your Journey, if not your Journey will be ready to go, click on Next.
 ![activeJourney](/images/aJourney-review.png)
 
-You can now click `Publish`, once you publish a journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
+You can now click **Publish**, once you publish a Journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
 
 ![activeJourney](/images/aJourney-publish.png)
 
