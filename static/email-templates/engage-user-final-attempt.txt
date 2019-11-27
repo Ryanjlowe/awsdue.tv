@@ -26,13 +26,15 @@
         }
     </style>
     <p style="display:none;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">This is a test message sent using Amazon Pinpoint.</p>
-    <table class="head-wrap" style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0;width:100%" bgcolor="#16191F">
+    <table class="head-wrap" style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0;width:100%" bgcolor="#66C7F4">
         <tbody>
             <tr style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
                 <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0"><img style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;height:35px;margin:0;max-width:100%;padding:12px;width:58px" src="https://docs.aws.amazon.com/assets/images/aws_logo_dark.png"></td>
-                <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0"></td>
+                <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0; color:white; font-size: 44px;
+        font-weight: bold;
+        text-align: left;"> Pinpoint Workshop</td>
             </tr>
-            <tr style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0" bgcolor="#232F3D">
+            <tr style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0" bgcolor="#66C7F4">
                 <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
                     <div style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;height:14px;margin:0;padding:0"></div>
                 </td>
@@ -44,8 +46,11 @@
             <tr style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
                 <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0"></td>
                 <td class="container" style="clear:both!important;display:block!important;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0 auto!important;max-width:602px!important;padding:0" bgcolor="#FFFFFF">
-                    <div class="content" style="border-left:1px solid #c9cfd0;border-right:1px solid #c9cfd0;border-top:1px solid #c9cfd0;display:block;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:1rem auto 0 auto;max-width:600px;padding:15px">
-                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:200;line-height:1.1;margin:0;margin-bottom:15px;padding:0">Couldn't decide yet?<br></h1>
+                    <div class="content" style="border-left:1px solid #c9cfd0;border-right:1px solid #c9cfd0;border-top:1px solid #c9cfd0;display:block;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:1rem auto 0 auto;max-width:600px;padding:10px 10px 0px 10px">
+                  
+                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:600;margin:0;margin-bottom:15px;padding:0">Email: EngageUsers-ReEngage2</h1>
+                        
+
                     </div>
                     <div class="column-wrap" style="border-bottom:1px solid #c9cfd0;border-left:1px solid #c9cfd0;border-right:1px solid #c9cfd0;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0 auto;max-width:600px!important;padding:0!important">
                         <div class="column" style="float:left;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0;width:300px">
@@ -53,14 +58,17 @@
                                 <tbody>
                                     <tr style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
                                         <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:15px">
-                                            {{#if User.UserAttributes.user}}
-                                                <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Hello {{User.UserAttributes.user}},</p>
-                                            {{else}}
-                                                <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Hello friend,</p>
-                                            {{/if}}
-                                            <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">There's still something in your shopping card, take this coupon to get free overnight shipping!<br></p><br>
+                                            {{#if User.UserAttributes.FirstName}}
+                                            <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Hello {{User.UserAttributes.FirstName}},</p>
+                                        {{else}}
+                                            <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Hello friend,</p>
+                                        {{/if}}
+                                            <p>This is a sample email sent during the <a href="https://www.pinpoint-workshop.com/pinpoint-journeys/">Engage Journey</a> section of our workshop as stage 1.</a> 
+                                            </p>
+                                            <p>This email will be sent to all users in the "Active User" segment that did not <strong>Click</strong> OR <strong>Open</strong> the initial email.</p>
+                                            <p><strong>This is another attempt to get the user to come back, maybe you should introduce a different subject line or html content.</strong></p>
                                             <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Thank you,</p>
-                                            <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">The Amazon Pinpoint team</p>
+                                            <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0"> <a href="https://www.pinpoint-workshop.com/">Pinpoint-Workshop.com</a></p>
                                         </td>
                                     </tr>
                                 </tbody>

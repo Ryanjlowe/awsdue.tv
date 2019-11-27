@@ -1,5 +1,5 @@
 +++
-title = "Create a journey"
+title = "What is a journey"
 chapter = false
 weight = 11
 +++
