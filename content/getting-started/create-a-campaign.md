@@ -17,7 +17,11 @@ Let's go through the steps needed to see a campaign in action.
 1. Choose **Create a campaign**.
 ![Create a campaign](/images/create-a-campaign.png)
 
-1. Configure the campaign name, type, and channel. Click **Next**.
+1. Configure the campaign name, type, and channel:
+    1. You can choose the name freely, i.e. "**workshop campaign**"
+    1. Select "**Standard Campaign**" as type
+    1. Select "**E-Mail**" as channel
+    1.  Click **Next**.
 ![Campaign details](/images/campaign-details.png)
 
 1. Select **Use an existing segment** and select the segment you imported earlier. Click **Next**.
