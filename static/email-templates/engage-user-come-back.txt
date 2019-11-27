@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width" style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
     <title style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">Amazon Pinpoint</title>
-    <base target="_blank">
 </head>
 <body style="height:485px" topmargin="0" marginwidth="0" marginheight="0" leftmargin="0" contenteditable="true" bgcolor="#F2F3F3">
     <style>
@@ -46,7 +45,7 @@
                 <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0"></td>
                 <td class="container" style="clear:both!important;display:block!important;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0 auto!important;max-width:602px!important;padding:0" bgcolor="#FFFFFF">
                     <div class="content" style="border-left:1px solid #c9cfd0;border-right:1px solid #c9cfd0;border-top:1px solid #c9cfd0;display:block;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:1rem auto 0 auto;max-width:600px;padding:15px">
-                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:200;line-height:1.1;margin:0;margin-bottom:15px;padding:0">There's still something on your list<br></h1>
+                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:200;line-height:1.1;margin:0;margin-bottom:15px;padding:0">Not good enough<br></h1>
                     </div>
                     <div class="column-wrap" style="border-bottom:1px solid #c9cfd0;border-left:1px solid #c9cfd0;border-right:1px solid #c9cfd0;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0 auto;max-width:600px!important;padding:0!important">
                         <div class="column" style="float:left;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0;width:300px">
@@ -54,12 +53,20 @@
                                 <tbody>
                                     <tr style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
                                         <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:15px">
-                                            {{#if User.UserAttributes.user}}
-                                                <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Hello {{User.UserAttributes.user}},</p>
+                                            {{#if User.UserAttributes.name}}
+                                                <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Hello {{User.UserAttributes.name}},</p>
                                             {{else}}
                                                 <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Hello friend,</p>
                                             {{/if}}
-                                            <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">There's still something on your wish list you were interested in. Check your list now.<br></p>
+                                            <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">We haven't seen you lately, what about some other options you might enjoy?<br></p>
+                                            {{#if User.UserAttributes.hasListened}}
+                                                <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Your favorite activities are: </p>
+                                                <ul>
+                                                    {{#each User.UserAttributes.artist}}
+                                                        <li>{{this}}</li>
+                                                    {{/each}}
+                                                </ul>
+                                            {{/if}}
                                             <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Thank you,</p>
                                             <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">The Amazon Pinpoint team</p>
                                         </td>

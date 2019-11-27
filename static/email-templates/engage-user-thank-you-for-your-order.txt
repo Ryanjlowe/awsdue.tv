@@ -45,14 +45,20 @@
                 <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0"></td>
                 <td class="container" style="clear:both!important;display:block!important;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0 auto!important;max-width:602px!important;padding:0" bgcolor="#FFFFFF">
                     <div class="content" style="border-left:1px solid #c9cfd0;border-right:1px solid #c9cfd0;border-top:1px solid #c9cfd0;display:block;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:1rem auto 0 auto;max-width:600px;padding:15px">
-                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:200;line-height:1.1;margin:0;margin-bottom:15px;padding:0">Hey...</h1>
+                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:200;line-height:1.1;margin:0;margin-bottom:15px;padding:0">Thank you for your order!<br></h1>
                     </div>
                     <div class="column-wrap" style="border-bottom:1px solid #c9cfd0;border-left:1px solid #c9cfd0;border-right:1px solid #c9cfd0;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0 auto;max-width:600px!important;padding:0!important">
                         <div class="column" style="float:left;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0;width:300px">
                             <table style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0;width:100%">
                                 <tbody>
                                     <tr style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
-                                        <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:15px">It saddens us that you're gone, please come back and let us know where we could do better!<br><br>
+                                        <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:15px">
+                                            {{#if User.UserAttributes.user}}
+                                                <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Hello {{User.UserAttributes.user}},</p>
+                                            {{else}}
+                                                <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Hello friend,</p>
+                                            {{/if}}
+                                            <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Thank you so much for ordering! As a thank you we'd like to give you a coupon for your next purchase.<br></p>
                                             <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">Thank you,</p>
                                             <p style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;font-size:14px;font-weight:400;line-height:1.6;margin:0;margin-bottom:10px;padding:0">The Amazon Pinpoint team</p>
                                         </td>

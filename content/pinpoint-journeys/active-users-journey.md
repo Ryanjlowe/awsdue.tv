@@ -17,23 +17,23 @@ Before we create the Journey we are going to create new message templates requir
 Create Message Template 1:  
    1.  **Template name**: ```Active-ReEngage```  
    2.  **Subject**: ```ActiveUsers-ReEngage Email 1```  
-   3.  **Message**: Copy the html from the following <a href="/email-templates/mailshot_1000_Engage-ReEngage.txt" target="_blank">link (will open new tab)</a>.
+   3.  **Message**: Copy the html from the following <a href="/email-templates/activate-user-attempt-1.txt" target="_blank">link (will open new tab)</a>.
 
 Create Message Template 2:    
    1.  **Template name**: ```Active-ReferAFriend```  
    2.  **Subject**: ```ActiveUsers-Refer A Friend```  
-   3.  **Message**: Copy the html from the following link.  <a href="/email-templates/mailshot_1001_Active-ReferAFriend.txt" target="_blank">link (will open new tab)</a>
+   3.  **Message**: Copy the html from the following link.  <a href="/email-templates/activate-user-attempt-2.txt" target="_blank">link (will open new tab)</a>
 
 Create Message Template 3:    
    1.  **Template name**: ```Active-DiscountCode```  
    2.  **Subject**: ```ActiveUsers-Discount Code```  
-   3.  **Message**: Copy the html from the following  <a href="/email-templates/mailshot_1002_Active-DiscountCode.txt" target="_blank">link (will open new tab)</a>
+   3.  **Message**: Copy the html from the following  <a href="/email-templates/activate-user-attempt-3.txt" target="_blank">link (will open new tab)</a>
 
 
 Create Message Template 4:  
    1.  **Template name**: ```Active-ReEngage2```  
    2.  **Subject**: ```ActiveUsers-ReEngage Email 2```  
-   3.  **Message**: Copy the html from the following <a href="/email-templates/mailshot_1003_Active-ReEngage2.txt" target="_blank">link (will open new tab)</a> 
+   3.  **Message**: Copy the html from the following <a href="/email-templates/activate-user-final-attempt.txt" target="_blank">link (will open new tab)</a> 
 
 ## Building the Journey
 
