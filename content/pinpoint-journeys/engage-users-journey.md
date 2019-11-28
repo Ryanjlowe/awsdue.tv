@@ -1,37 +1,8 @@
 +++
-title = "Engage user"
+title = "Engage active users"
 chapter = false
-weight = 30
+weight = 40
 +++
-
-
-In this Journey we have 4 different email templates we are going to send depending on user engagement/activity. We believe anyone in this Journey has engaged with your product before as they are part of a dynamic segment we created earlier.  We are trying to get them to re-engage and spread the word about your product.
-
-
-## Creating the message templates to send
-
-Before we create the Journey we are going to create new message templates required for the emails. We will follow the same process as we did in the [Getting Started](/getting-started/create-a-message-template/) section.
-
-Create Message Template 1:  
-   1.  **Template name**: ```Engage-ReEngage```  
-   2.  **Subject**: ```EngageUsers-ReEngage Email 1```  
-   3.  **Message**: Copy the html from the following <a href="/email-templates/engage-user-attempt-1.txt" target="_blank">link (will open new tab)</a>.
-
-Create Message Template 2:    
-   1.  **Template name**: ```Engage-ReferAFriend```  
-   2.  **Subject**: ```EngageUsers-Refer A Friend```  
-   3.  **Message**: Copy the html from the following link.  <a href="/email-templates/engage-user-attempt-2.txt" target="_blank">link (will open new tab)</a>
-
-Create Message Template 3:    
-   1.  **Template name**: ```Engage-DiscountCode```  
-   2.  **Subject**: ```EngageUsers-Discount Code```  
-   3.  **Message**: Copy the html from the following  <a href="/email-templates/engage-user-attempt-3.txt" target="_blank">link (will open new tab)</a>
-
-
-Create Message Template 4:  
-   1.  **Template name**: ```Engage-ReEngage2```  
-   2.  **Subject**: ```EngageUsers-ReEngage Email 2```  
-   3.  **Message**: Copy the html from the following <a href="/email-templates/engage-user-final-attempt.txt" target="_blank">link (will open new tab)</a> 
 
 ## Building the Journey
 
@@ -154,4 +125,3 @@ If there are any errors you will be given a message to explain where to fix in y
 You can now click **Publish**, once you publish a Journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
 
 ![activeJourney](/images/aJourney-publish.png)
-
