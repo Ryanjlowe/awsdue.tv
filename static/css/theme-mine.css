@@ -147,3 +147,26 @@ div.notices p:first-child:before {
     font-weight: 900; /* Fix version 5.0.9 */
     left: 10px;
 }
+
+@media screen and (min-width: 768px) {
+    body img {
+        width: 75%;
+    }
+}
+
+#chapter {
+    padding: 0 0 2rem 0;
+}
+
+h2 {
+    margin: 0.85rem 0 1.5rem 0;
+}
+
+body #chapter ul.children {
+    list-style: none;
+}
+
+body #chapter ul.children li {
+    font-size: 1.2rem;
+    padding: 0.4rem;
+}
