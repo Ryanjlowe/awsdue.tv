@@ -12,7 +12,7 @@ If you attend an AWS hosted event, such as AWS re:Invent, or an AWS Immersion Da
 
 ### Create an AWS account
 
-{{% notice warning %}}
+{{% notice note %}}
 Your account must have the ability to create new IAM roles and scope other IAM permissions.
 {{% /notice %}}
 
