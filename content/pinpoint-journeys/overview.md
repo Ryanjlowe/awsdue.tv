@@ -4,14 +4,30 @@ chapter = false
 weight = 20
 +++
 
-In this section of the workshop we are going to build an advanced journey. In order to do this section you **MUST** complete the previous Amazon Pinpoint [Getting Started](/getting-started/) section as we will be using a number of these components.
+{{% notice note %}}
+The chapters in this workshop build on each other. Make sure you have completed the steps in [Getting Started](/getting-started/) before you continue.
+{{% /notice %}}
 
-We are going to replicate a real life onboarding flow where we try to either "Re-engage" inactive users (see right hand red side of the diagram) by a sequence of emails or alternatively if the user is active on our site (see left hand side) we send a flow to get them to perform tasks which creates stickiness with the product.
+In this real-life onboarding flow you distinguish between active users and inactive users.
+
+Guide **Active users** through journey activities to **engage** with your product. Ideally they perform an activity that creates a deeper connection with your product, or helps them get familiar with a particular feature.
+
+Guide **Inactive users** through journey activities to **activate** them.
 
 {{<mermaid align="center">}}
 graph TD;
 
-    1("Welcome email")-- active users -->2("Wait 'X' hours")
+    1("Start")-- Segment: Active users -->2("Journey: Engage active users")
+    1 -- Segment: Inactive users -->12("Journey: Activate inactive users")
+
+    style 1 fill:#FF9900
+    
+{{< /mermaid >}}
+
+{{<mermaid align="center">}}
+graph TD;
+
+    1("Start")-- active users -->2("Wait 'X' hours")
     2 --> 3("Nudge users to engage by trying <br>out one of our features<br>(virtual high 5!)")
     3 --> 4("Wait 'X' hours")
     4 --> 5{EmailCondition}

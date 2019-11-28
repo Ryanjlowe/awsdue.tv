@@ -1,12 +1,10 @@
 +++
-title = "Activate user"
+title = "Activate inactive users"
 chapter = false
 weight = 40
 +++
 
-
 In this Journey there are 2 different email templates that we are going to send your users to try get them to re-engage with your product. During this Journey if the user becomes an **Engaged user** (ie visits your site) they will exit this Journey and will move into the [Engage User Journey](/pinpoint-journeys/engage-users-journey/).
-
 
 ## Creating the message templates to send
 
@@ -110,4 +108,3 @@ If there are any errors you will be given a message to explain where to fix in y
 You can now click **Publish**, once you publish a Journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
 
 ![activeJourney](/images/aJourney-publish.png)
-

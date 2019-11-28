@@ -1,12 +1,10 @@
 +++
-title = "Engage user"
+title = "Engage active users"
 chapter = false
 weight = 30
 +++
 
-
 In this Journey we have 4 different email templates we are going to send depending on user engagement/activity. We believe anyone in this Journey has engaged with your product before as they are part of a dynamic segment we created earlier.  We are trying to get them to re-engage and spread the word about your product.
-
 
 ## Creating the message templates to send
 
@@ -154,4 +152,3 @@ If there are any errors you will be given a message to explain where to fix in y
 You can now click **Publish**, once you publish a Journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
 
 ![activeJourney](/images/aJourney-publish.png)
-
