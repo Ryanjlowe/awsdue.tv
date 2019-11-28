@@ -13,11 +13,11 @@ Now, that you've completed your first Amazon Pinpoint experience, it is importan
 Cleaning up an Amazon Pinpoint project is very straight forward:
 
 1. In the project, use the left bar and navigate to **Settings -> General Settings**
-![Create a campaign](/images/cleanup_general_settings.png)
+![general settings](/images/cleanup_general_settings.png)
 1. In the right corner, you will find the **Delete project** button
-![Create a campaign](/images/cleanup_delete_button.png)
+![the delete button](/images/cleanup_delete_button.png)
 1. Confirm the deletion by typing the **name of your project** into the text field and hitting **OK**
-![Create a campaign](/images/cleanup_delete_dialogue.png)
+![confirm deletion](/images/cleanup_delete_dialogue.png)
 1. All set!
 
 
