@@ -40,7 +40,7 @@ From within the console on the left hand navigation bar click on **Journeys** an
 ![createJourney](/images/create-journey.png)
 
 
-Before we start building the Journey lets give it a name by editing the box on the top right and call the Journey **Active Users**.
+Before we start building the Journey lets give it a name by editing the box on the top right and call the Journey **Engage Users**.
 
 ![createJourney](/images/aJourney-create-journey.png)  
 
