@@ -17,7 +17,8 @@ To get started with your segment import you need to define the details of your u
 
 1. Download the [sample CSV file](/csv/activeSegment.csv) and open it in a text editor on your computer.
 
-1. Add/edit a couple of users using the wildcard local parts notation you saw when you sent a test message.  
+1. Add/edit users using the wildcard local parts notation you saw when you sent a test message.
+
 Edit the `Address` column in the CSV file to reflect email addresses you verified in the [Configure Email section ](../configure-email/).  
 Example: If you verified `fred@domain`, then `fred+foo@domain`, `fred+bar@domain`, etc. will also work.  
 ```csv
@@ -26,10 +27,16 @@ EMAIL,Raymond+pinpoint1@emaildomain.com,userid1,Raymond,Phillips,35,TRUE
 EMAIL,Sue+pinpoint2@emaildomain.com,userid2,Sue,Sherman,31,FALSE
 EMAIL,Mark+pinpoint3@emaildomain.com,userid3,Mark,Price,28,
 ```
-Please ensure that you have at least two verified email addresses for userid1 and userid2.  
+
+Ensure that you have at least two verified email addresses for userid1 and userid2. These addresses will receive your messages throughout the workshop.
+
+{{% notice note %}}
+Many mail systems support the *wildcard local parts notation*. If your mail system does not, then [Add additional email recipients](../configure-email/#add-additional-email-recipients) to include the addresses you entered in your CSV file.
+{{% /notice %}}
+
 Finally, double check to make sure that all email addresses you entered are valid. 
 
-1. Save the file and remember its location on your computer. You will need this in the next step.
+Save the file and remember its location on your computer. You will need this in the next step.
 
 ### Import a segment
 
