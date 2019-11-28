@@ -11,9 +11,7 @@ When a customer who visits your site in any part of this journey they become **a
 graph TD;
 
     10("Start")-- Segment: Inactive users --> 20("Wait 'X' hours")
-    20 --> 30("Email: Re-affirm what your product does<br/>and get them to become active")
-    30 --> 40("Wait 'X' hours")
-    40 --> 50{SegmentCondition:<br/>Is user still inactive?}
+    20 --> 50{SegmentCondition:<br/>Is user still inactive?}
     50 -- Yes --> 60("Email: Send incentive to come back")
     60 --> 70("Wait 'X' hours")
     70 --> 80{SegmentCondition:<br/>Is user still inactive?}
@@ -26,11 +24,6 @@ graph TD;
 ### Message templates
 
 Create two new email message templates. Each message is designed for its particular user engagement/activity. Follow the process you are already familiar with from the [Create a message template](/getting-started/create-a-message-template/) step.
-
-1. Message template: *Re-affirm what your product does*  
-**Template name**: `???`  
-**Subject**: `???`  
-**Message**: Copy/paste the [source code for the ??? email](/email-templates/???.txt)
 
 1. Message template: *Send incentive to come back*  
 **Template name**: `Activate-DiscountCode`  
