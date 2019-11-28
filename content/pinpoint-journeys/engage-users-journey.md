@@ -59,6 +59,8 @@ In this Journey we are going to use the **activeUsers** segment we created earli
 3. If you add a helpful description when the flow item in the Journey folds up in the interface you can read a description of what that flow was doing. Enter `Enter the Active User Dynamic Segment`.
 4. Click **Save**
 
+![createJourney](/images/aJourney-createEntry.png)
+
 #### 2. Adding Activities
 
 Users can now successfully enter the Journey. To add subsequent steps to the Journey simply click on the **+** symbol and you will be able to chose the type of activity you wish to build.
@@ -66,7 +68,13 @@ Users can now successfully enter the Journey. To add subsequent steps to the Jou
 
 #### 3. Wait
 
-Within Pinpoint we give you the facility to perform a "Wait" stage, this means that instead of sending a number of emails concurrently we can specify we want the Journey to continue after a period of time or at a specific time. Click on the Plus symbol and chose **Wait**.
+Within Pinpoint we give you the facility to perform a "Wait" stage, this means that instead of sending a number of emails concurrently we can specify we want the Journey to continue after a period of time or at a specific time. 
+
+1) Click on the Plus symbol  
+2) Choose **Wait**.  
+3) Select **Period of Time**  
+4) Set the amount of time to **1** hour  
+5) Click **Save**  
 
 ![createJourney](/images/aJourney-wait.png)
 
@@ -84,6 +92,11 @@ Once the wait time has been completed the Journey continues. for the purpose of 
 
 Following sending an email you are likely to want to pause before you do followup activity - as with step 3 introduce another wait state to the Journey.
 
+1) Click on the Plus symbol  
+2) Choose **Wait**.  
+3) Select **Period of Time**  
+4) Set the amount of time to **1** hour  
+5) Click **Save**  
 ![createJourney](/images/aJourney-wait.png)
 
 #### 6. Multivariate Split
