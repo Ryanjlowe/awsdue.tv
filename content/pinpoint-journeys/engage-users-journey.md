@@ -6,12 +6,11 @@ weight = 40
 
 ## Building the Journey
 
-From within the console on the left hand navigation bar click on **Journeys** and subsequently click on **Create Journey** on the top right hand side of the page.
+In the [Amazon Pinpoint Console](https://console.aws.amazon.com/pinpoint/), navigate to **Journeys**. Click on **Create Journey**.
 
 ![createJourney](/images/create-journey.png)
 
-
-Before we start building the Journey lets give it a name by editing the box on the top right and call the Journey **Engage Users**.
+Before you build the journey, give it a name by editing the box on the top right. Call the Journey **Engage Users**.
 
 ![createJourney](/images/aJourney-create-journey.png)  
 
