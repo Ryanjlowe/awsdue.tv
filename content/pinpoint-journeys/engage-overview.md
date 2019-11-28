@@ -8,15 +8,15 @@ Guide **Active users** through activities to **engage** with your product. All c
 {{<mermaid align="center">}}
 graph TD;
 
-    10("Start")-- Segment: Active users --> 20("Wait 'X' hours")
-    20 --> 30("Email: Nudge user to try<br/>one of our features<br>(virtual high 5!)")
+    A((Start)) -- Segment: Active users --> 20("Wait 'X' hours")
+    20 --> 30(Email:<br/>Nudge user to try one of our features)
     30 --> 40("Wait 'X' hours")
-    40 --> 50{EmailCondition}
-    50 -- Clicked link in email --> 60("Email:<br/>Send share/refer a friend")
-    50 -- Opened email --> 70("Email:<br/>Send incentive to come back")
-    50 -- Other --> 80("Email<br/>Last attempt")
+    40 --> 50{Email condition}
+    50 -- Clicked link in email --> 60(Email:<br/>Share/refer a friend)
+    50 -- Opened email --> 70(Email:<br/>Send incentive to come back)
+    50 -- Other --> 80(Email:<br/>Last attempt)
     
-    style 10 fill:#FF9900
+    style A fill:#FF9900
     
 {{< /mermaid >}}
 
@@ -29,7 +29,7 @@ Create four new email message templates. Each message is designed for its partic
 **Subject**: `EngageUsers-ReEngage Email 1`  
 **Message**: Copy/paste the [source code for the Engage-ReEngage email](/email-templates/engage-user-attempt-1.txt)
 
-1. Message template: *Send share/refer a friend*  
+1. Message template: *Share/refer a friend*  
 **Template name**: `Engage-ReferAFriend`  
 **Subject**: `EngageUsers-Refer A Friend`  
 **Message**: Copy/paste the [source code for the Engage-ReferAFriend email](/email-templates/engage-user-attempt-2.txt)

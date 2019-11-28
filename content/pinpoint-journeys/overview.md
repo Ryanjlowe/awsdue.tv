@@ -17,9 +17,9 @@ Guide **Inactive users** through journey activities to **activate** them.
 {{<mermaid align="center">}}
 graph TD;
 
-    10("Start")-- Segment: Active users -->20("Journey: Engage active users")
-    10 -- Segment: Inactive users -->30("Journey: Activate inactive users")
+    A((Start)) -- Segment: Active users --> B(Journey:<br/>Engage active users)
+    A -- Segment: Inactive users --> C(Journey:<br/>Activate inactive users)
 
-    style 10 fill:#FF9900
+    style A fill:#FF9900
     
 {{< /mermaid >}}

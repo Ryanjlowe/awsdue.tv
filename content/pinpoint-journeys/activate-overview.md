@@ -10,14 +10,18 @@ When a customer who visits your site in any part of this journey they become **a
 {{<mermaid align="center">}}
 graph TD;
 
-    10("Start")-- Segment: Inactive users --> 20("Wait 'X' hours")
-    20 --> 50{SegmentCondition:<br/>Is user still inactive?}
-    50 -- Yes --> 60("Email: Send incentive to come back")
+    A((Start)) -- Segment: Inactive users --> 20("Wait 'X' hours")
+    20 --> 50{Segment condition:<br/>Is user still inactive?}
+    50 -- Yes --> 60(Email:<br/>Send incentive to come back)
+    50 -- No --> 300((End))
     60 --> 70("Wait 'X' hours")
-    70 --> 80{SegmentCondition:<br/>Is user still inactive?}
-    80 -- Yes --> 90("Email: Offer help")
+    70 --> 80{Segment condition:<br/>Is user still inactive?}
+    80 -- Yes --> 90(Email:<br/>Offer help)
+    80 -- No --> 400((End))
     
-    style 10 fill:#FF9900
+    style A fill:#FF9900
+    style 300 fill:#FF9900
+    style 400 fill:#FF9900
     
 {{< /mermaid >}}
 
