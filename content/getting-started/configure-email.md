@@ -3,11 +3,16 @@ title: "Configure email"
 weight: 10
 ---
 
-In this workshop you will use Email to send personalized email messages to your customers.
+In this workshop you use Email to send personalized email messages to your customers.
 
-If you've closed the [Amazon Pinpoint Console](https://console.aws.amazon.com/pinpoint/), open it again. Navigate to your project, then **Settings**.
+On the **Configure features** page, choose **Project features** > **Email**/**Configure** to **Set up email**.
 
-On the **Configure features** page, locate the Email channel. Click the **Configure**/**Manage** button to **Set up email**.
+{{% notice note %}}
+If you closed the [Amazon Pinpoint Console](https://console.aws.amazon.com/pinpoint/), open it again and navigate to your project > **Settings** > **Email**/**Manage** > **Identity details**/**Edit**.  
+Check the box **Enable the email channel for this project**.
+![Enable the email channel for this project](/images/enable-the-email-channel.png)
+Select Identity type **Email address** and **Verify a new email address**.
+{{% /notice %}}
 
 ### Set up Email
 
