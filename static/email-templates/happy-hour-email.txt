@@ -1,22 +1,3 @@
----
-title: "Send an email message"
-weight: 20
----
-
-In the menu bar on the left hand side click on **Test Messaging** and select the **Email** channel.
-![Test Messaging: Email Channel](/images/test-messaging-email-channel.png)
-
-1. Select the **sender email address** that you have verified during the project setup.
-
-1. Enter **your email address** that you verified for Destination type **Email address** as the recipient. This could be the same as your sender address, or additional email identities that you have verified. Amazon Pinpoint supports wildcard local parts. If you verified `fred@domain`, then `fred+foo@domain` will also work.
-
-1. Select **Create a new message**. You will learn about the message templates feature in a couple of minutes.
-
-1. Set the email **Subject**: `Join us at the Pinpoint - SES Happy Hour this Wednesday!`.
-
-1. Copy/paste this code for the **Message** body:  
-(Use the *Copy to clipboard* icon in the top right of the code window)  
-```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
@@ -118,13 +99,3 @@ In the menu bar on the left hand side click on **Test Messaging** and select the
     </table>
 </body>
 </html>
-```
-
-Be sure to **paste** the copied code into your **Message** body. 
-Optionally, preview the message before you send it.
-
-![Create a test email message](/images/test-messaging-email.png)
-
-Click the **Send message** button and check your inbox.
-
-You have received your first email from Amazon Pinpoint.

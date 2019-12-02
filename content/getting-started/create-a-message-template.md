@@ -17,7 +17,7 @@ As your last step in this chapter, you will learn how to create your first messa
 ![Message template channel](/images/message-template-channel.png)
 
 1. Use a descriptive **Name** for your new template. This will help you identify the template later when you need to choose from a list of templates. The **Description** is optional.  
-**Name**: *Welcome Email*.  
+**Name**: *WelcomeEmail*.  
 ![Message Template Details](/images/message-template-details.png)
 
 1. Since this is an email template, configure the email **Subject** and **Message** body.  
