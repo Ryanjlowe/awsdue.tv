@@ -5,9 +5,11 @@ weight: 30
 
 You will use SMS and voice to send SMS text messages from shared or reserved phone numbers.
 
-On the **Configure features** page, locate the SMS and voice channel. Click the **Configure** button to **Set up SMS and voice**.
+On the **Configure features** page, choose **Project features** > **SMS and voice**/**Configure** to **Set up SMS**.
 
-If you closed the [Amazon Pinpoint Console](https://console.aws.amazon.com/pinpoint/), open it again. Navigate to your project, then to **Settings** > **SMS and voice** > **Manage** > **Edit**.
+{{% notice note %}}
+If you closed the [Amazon Pinpoint Console](https://console.aws.amazon.com/pinpoint/), open it again and navigate to your project > **Settings** > **SMS and voice**/**Manage** > **SMS settings**/**Edit**.
+{{% /notice %}}
 
 ### Set up SMS
 
