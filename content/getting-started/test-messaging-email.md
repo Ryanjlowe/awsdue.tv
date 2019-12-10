@@ -12,7 +12,7 @@ In the menu bar on the left hand side click on **Test Messaging** and select the
 
 1. Select **Create a new message**. You will learn about the message templates feature in a couple of minutes.
 
-1. Set the email **Subject**: `Join us at the Pinpoint - SES Happy Hour this Wednesday!`.
+1. Set the email **Subject**: `Sample Email`.
 
 1. Copy/paste this code for the **Message** body:  
 (Use the *Copy to clipboard* icon in the top right of the code window)  
@@ -62,7 +62,7 @@ In the menu bar on the left hand side click on **Test Messaging** and select the
                 <td class="container" style="clear:both!important;display:block!important;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0 auto!important;max-width:602px!important;padding:0" bgcolor="#FFFFFF">
                     <div class="content" style="border-left:1px solid #c9cfd0;border-right:1px solid #c9cfd0;border-top:1px solid #c9cfd0;display:block;font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:1rem auto 0 auto;max-width:600px;padding:10px 10px 0px 10px">
                   
-                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:600;margin:0;margin-bottom:15px;padding:0">Join us at the Pinpoint - SES Happy Hour this Wednesday!</h1>
+                        <h1 style="color:#000;font-family:HelveticaNeue-Light,'Helvetica Neue Light','Helvetica Neue',Helvetica,Arial,'Lucida Grande',sans-serif;font-size:44px;font-weight:600;margin:0;margin-bottom:15px;padding:0">Demo Test Message</h1>
                         
 
                     </div>
@@ -72,13 +72,8 @@ In the menu bar on the left hand side click on **Test Messaging** and select the
                                 <tbody>
                                     <tr style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:0">
                                         <td style="font-family:'Helvetica Neue',Helvetica,Helvetica,Arial,sans-serif;margin:0;padding:15px">
-                                            <p>Thanks for choosing to attend the <a href="https://www.pinpoint-workshop.com/">Amazon Pinpoint Workshop</a> at AWS re:Invent 2019.</p>
-                                            <p>We invite you to meet the teams behind Amazon Pinpoint and Amazon SES at the Pinpoint - SES Happy Hour.</p>
-                                            <p>Where: Alibi Ultra Lounge, Aria Hotel, 3730 S Las Vegas Blvd, Las Vegas, NV 89109<br>
-                                            When: Wednesday, December 4, 2019 at 4:00 PM - 6:00 PM (or until the tab runs dry)</p>
-                                            <p>We hope to see you there.</p>
-                                            <p>Enjoy the rest of the workshop, and have a great re:Invent 2019!</p>
-                                            <p>Daniel</p>
+                                            <p>Thanks for working through the <a href="https://www.pinpoint-workshop.com/">Amazon Pinpoint Workshop</a></p>
+                                            <p>This email was send in the getting started section.</p>
                                         </td>
                                     </tr>
                                 </tbody>

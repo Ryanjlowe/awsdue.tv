@@ -34,8 +34,10 @@ As your last step in this chapter, you will learn how to create your first messa
 
 You can personalize the subject and body of the template. To do this, add message variables that refer to specific attributes that you or Amazon Pinpoint created for the project, such as an attribute that stores a user's first name.
 
-Your workshop uses personalized message templates. You can see the dynamic attributes in action inside the `{{` and `}}` handlebars, e.g. when you look for `{{#if User.UserAttributes.user}}` in the email source code.
+Your workshop uses personalized message templates. You can see the dynamic attributes in action inside the `{{` and `}}` handlebars.
 
-<!-- 
+
+{{% notice tip %}}
 To learn more about message templates, visit [Amazon Pinpoint Message Templates](https://docs.aws.amazon.com/pinpoint/latest/userguide/messages-templates.html) in the Amazon Pinpoint User Guide.
--->
+
+{{% /notice %}}
