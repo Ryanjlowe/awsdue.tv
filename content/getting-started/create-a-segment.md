@@ -15,9 +15,12 @@ In a couple of minutes, you'll send customized messages to these users.
 
 To get started with your segment import you need to define the details of your users and endpoints. This can be an email address, or another destination that can receive messages, such as mobile device identifier, or mobile phone number. Let's keep it simple and go with email.
 
-1. Download the [sample CSV file](/csv/activeSegment.csv) and open it in a text editor on your computer.
 
-1. Add/edit users using the wildcard local parts notation you saw when you sent a test message.
+1. Ensure you have **two** verified email addresses by following the process in the [Configure Email section ](../configure-email/). .
+   
+2. Download the [sample CSV file](/csv/activeSegment.csv) and open it in a text editor on your computer.
+   
+3. Add/edit users using the wildcard local parts notation you saw when you sent a test message.
 
 Edit the `Address` column in the CSV file to reflect email addresses you verified in the [Configure Email section ](../configure-email/).  
 Example: If you verified `fred@domain`, then `fred+foo@domain`, `fred+bar@domain`, etc. will also work.  
@@ -28,13 +31,9 @@ EMAIL,Sue+pinpoint2@emaildomain.com,userid2,Sue,Sherman,31,FALSE
 EMAIL,Mark+pinpoint3@emaildomain.com,userid3,Mark,Price,28,
 ```
 
-Ensure that you have at least two verified email addresses for userid1 and userid2. These addresses will receive your messages throughout the workshop.
+Use your **two verified** email addresses for userid1 and userid2. These addresses will receive your messages throughout the workshop.
 
-{{% notice note %}}
-Many mail systems support the *wildcard local parts notation*. If your mail system does not, then [Add additional email recipients](../configure-email/#add-additional-email-recipients) to include the addresses you entered in your CSV file.
-{{% /notice %}}
-
-Finally, double check to make sure that all email addresses you entered are valid. 
+Finally, double check to make sure that all email addresses you entered are valid.
 
 Save the file and remember its location on your computer. You will need this in the next step.
 
@@ -46,18 +45,18 @@ Since you're uploading a single file under 1GB, you can upload the file directly
 
 1. Navigate to your project in the [Amazon Pinpoint Console](https://console.aws.amazon.com/pinpoint/), then **Segments**.
 
-1. Choose **Create a segment**.
-![Create a segment](/images/create_a_segment.png)
+2. Choose **Create a segment**.
+   ![Create a segment](/images/create_a_segment.png)
 
-1. Choose **Import a segment**.
-![Import a segment](/images/import-a-segment.png)
+3. Choose **Import a segment**.
+   ![Import a segment](/images/import-a-segment.png)
 
-1. Choose **Upload files from your computer** and drop the CSV file you just saved in the last step into the *Drop files here* area, or click **Choose files** and browse to your CSV import file.
+4. Choose **Upload files from your computer** and drop the CSV file you just saved in the last step into the *Drop files here* area, or click **Choose files** and browse to your CSV import file.
 
-1. Provide a descriptive name for your segment. Click **Create segment** to complete the import.
-![Name your segment and complete the import](/images/complete-the-import.png)
+5. Provide a descriptive name for your segment. Click **Create segment** to complete the import.
+   ![Name your segment and complete the import](/images/complete-the-import.png)
 
-1. After a couple of seconds your segment will be imported. Click on the segment name to view its details.
+6. After a couple of seconds your segment will be imported. Click on the segment name to view its details.
 
 You have imported users and endpoints into your project. Your project is set up to engage with these users based on rules and conditions that you will define next.
 

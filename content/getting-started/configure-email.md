@@ -5,7 +5,7 @@ weight: 10
 
 In this workshop you use Email to send personalized email messages to your customers.
 
-On the **Configure features** page, choose **Project features** > **Email**/**Configure** to **Set up email**.
+On the **Configure features** page, choose **Project features** > **Email**/**Configure** to **Set up email**. 
 
 {{% notice note %}}
 If you closed the [Amazon Pinpoint Console](https://console.aws.amazon.com/pinpoint/), open it again and navigate to your project > **Settings** > **Email**/**Manage** > **Identity details**/**Edit**.  
@@ -18,8 +18,11 @@ Select Identity type **Email address** and **Verify a new email address**.
 
 Type an email address that you will use to send email. For example, you can use your personal email address, or your work email address. Click the **Verify** button and **keep this page open**.
 
-![Set up email](/images/set-up-email.png)
 
+![Set up email](/images/set-up-email.png)
+{{% notice note %}}
+Many mail systems support the *wildcard local parts notation* eg `fred@domain`, then `fred+foo@domain` . However, these are treated as individual accounts in Amazon Pinpoint, **each** needing individual verification.
+{{% /notice %}}
 Amazon Pinpoint sends a confirmation email to your address. Click the link in the message to verify your address.
 
 ![Confirm your email address](/images/validate-email.png)
