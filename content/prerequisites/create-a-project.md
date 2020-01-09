@@ -9,7 +9,7 @@ A project in Amazon Pinpoint is a collection of settings, customer information, 
 
 Head to the [Amazon Pinpoint Console](https://console.aws.amazon.com/pinpoint/).
 
-Amazon Pinpoint offers support for multiple regions. Your resources in each region are independent of similar resources in other regions. If you need guidance on regions, please visit [Choose your region](../choose-your-region).
+Amazon Pinpoint offers support for multiple regions. Your resources in each region are independent of similar resources in other regions. If you need guidance on regions, visit [Choose your region](../choose-your-region).
 
 ### Create an Amazon Pinpoint project
 
