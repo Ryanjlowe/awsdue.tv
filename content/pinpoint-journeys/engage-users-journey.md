@@ -124,3 +124,7 @@ If there are any errors you will be given a message to explain where to fix in y
 You can now click **Publish**, once you publish a Journey you can no longer edit it. You are able to duplicate a flow if you do want to modify it in the future. Click on Publish - you are done!
 
 ![activeJourney](/images/aJourney-publish.png)
+
+### Understand Journey Analytics
+
+After you click publish for the first time you will be presented a walkthrough of how you can review analytics and the status of your analytics. Review this content to dive deeper on the type of data that can be retrieved. This information is all available via API calls as well.

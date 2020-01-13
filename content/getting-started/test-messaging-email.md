@@ -10,11 +10,16 @@ In the menu bar on the left hand side click on **Test Messaging** and select the
 
 1. Enter **your email address** that you verified for Destination type **Email address** as the recipient. This could be the same as your sender address, or additional email identities that you have verified. Amazon Pinpoint supports wildcard local parts. If you verified `fred@domain`, then `fred+foo@domain` will also work.
 
+{{% notice note %}}
+Many mail systems support the *wildcard local parts notation*. However, these are treated as individual accounts in Amazon Pinpoint, each needing individual verification.
+{{% /notice %}}
+
+
 1. Select **Create a new message**. You will learn about the message templates feature in a couple of minutes.
 
-1. Set the email **Subject**: `Sample Email`.
+2. Set the email **Subject**: `Sample Email`.
 
-1. Copy/paste this code for the **Message** body:  
+3. Copy/paste this code for the **Message** body:  
 (Use the *Copy to clipboard* icon in the top right of the code window)  
 ```html
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
