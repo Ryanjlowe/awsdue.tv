@@ -158,6 +158,10 @@ div.notices p:first-child:before {
     padding: 0 0 2rem 0;
 }
 
+#chapter p {
+  text-align: left;
+}
+
 h2 {
     margin: 0.85rem 0 1.5rem 0;
 }

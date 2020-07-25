@@ -1,27 +1,27 @@
-baseURL = "https://www.pinpoint-workshop.com"
+baseURL = "https://awsdue.tv"
 languageCode = "en-us"
-title = "Amazon Pinpoint Workshop"
+title = "AWS DUE TV"
 theme = "learn"
 
 [params]
-  # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page. 
+  # Prefix URL to edit current page. Will display an "Edit this page" button on top right hand corner of every page.
   # Useful to give opportunity to people to create merge request for your doc.
   # See the config.toml file from this documentation site to have an example.
   editURL = ""
   # Author of the site, will be used in meta information
-  author = "Daniel Geske, Neil Lock, and David Heidt, Amazon Web Services EMEA SARL"
+  author = "Ryan Lowe"
   # Description of the site, will be used in meta information
   description = "Multichannel customer engagement using Amazon Pinpoint"
   # Shows a checkmark for visited pages on the menu
   showVisitedLinks = false
   # Disable search function. It will hide search bar
   disableSearch = true
-  # Javascript and CSS cache are automatically busted when new version of site is generated. 
+  # Javascript and CSS cache are automatically busted when new version of site is generated.
   # Set this to true to disable this behavior (some proxies don't handle well this optimization)
   disableAssetsBusting = false
   # Set this to true to disable copy-to-clipboard button for inline code.
   disableInlineCopyToClipBoard = false
-  # A title for shortcuts in menu is set by default. Set this to true to disable it. 
+  # A title for shortcuts in menu is set by default. Set this to true to disable it.
   disableShortcutsTitle = false
   # When using mulitlingual website, disable the switch language button.
   disableLanguageSwitchingButton = false
@@ -46,37 +46,115 @@ url = "https://aws.amazon.com/pinpoint/"
 weight = 10
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-fw fa-book'></i> Documentation"
+name = "<i class='fas fa-fw fa-file-code'></i> Reference Architectures"
+identifier = "reference architectures"
+url = "https://github.com/aws-samples/digital-user-engagement-reference-architectures"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-codepen'></i> AWS Solutions"
+identifier = "aws solutions"
+url = "https://aws.amazon.com/solutions/implementations/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&solutions-all.q=pinpoint&solutions-all.q_operator=AND"
+weight = 30
+
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-book'></i> Pinpoint Documentation"
 identifier = "documentation"
 url = "https://docs.aws.amazon.com/pinpoint/"
-weight = 20
+weight = 40
 
 [[menu.shortcuts]]
 name = "&nbsp; <i class='fas fa-fw fa-bookmark'></i> User Guide"
 identifier = "userguide"
 url = "https://docs.aws.amazon.com/pinpoint/latest/userguide/welcome.html"
-weight = 30
+weight = 50
 
 [[menu.shortcuts]]
 name = "&nbsp; <i class='fas fa-fw fa-bookmark'></i> Developer Guide"
 identifier = "developerguide"
 url = "https://docs.aws.amazon.com/pinpoint/latest/developerguide/welcome.html"
-weight = 40
+weight = 60
 
 [[menu.shortcuts]]
 name = "&nbsp; <i class='fas fa-fw fa-bookmark'></i> REST API Reference"
 identifier = "apireference"
 url = "https://docs.aws.amazon.com/pinpoint/latest/apireference/welcome.html"
-weight = 50
+weight = 70
 
 [[menu.shortcuts]]
 name = "&nbsp; <i class='fas fa-fw fa-bookmark'></i> SMS and Voice API"
 identifier = "pinpoint-sms-voice-apireference"
 url = "https://docs.aws.amazon.com/pinpoint-sms-voice/latest/APIReference/welcome.html"
-weight = 60
+weight = 80
+
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-book'></i> SES Documentation"
+identifier = "documentation"
+url = "https://docs.aws.amazon.com/ses/"
+weight = 90
 
 [[menu.shortcuts]]
 name = "<i class='fab fa-twitter fa-lg'></i> @awscloud"
 identifier = "twitter"
 url = "https://twitter.com/intent/user?screen_name=awscloud"
-weight = 80
+weight = 100
+
+
+[deployment]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+order = [".jpg$", ".gif$"]
+
+
+[[deployment.targets]]
+# An arbitrary name for this target.
+name = "s3"
+# The Go Cloud Development Kit URL to deploy to. Examples:
+# GCS; see https://gocloud.dev/howto/blob/#gcs
+# URL = "gs://<Bucket Name>"
+
+# S3; see https://gocloud.dev/howto/blob/#s3
+# For S3-compatible endpoints, see https://gocloud.dev/howto/blob/#s3-compatible
+ URL = "s3://awsdue.tv?region=us-east-1"
+
+# Azure Blob Storage; see https://gocloud.dev/howto/blob/#azure
+# URL = "azblob://$web"
+
+# You can use a "prefix=" query parameter to target a subfolder of the bucket:
+# URL = "gs://<Bucket Name>?prefix=a/subfolder/"
+
+# If you are using a CloudFront CDN, deploy will invalidate the cache as needed.
+cloudFrontDistributionID = "E31IWXLQ785I67"
+
+# Optionally, you can include or exclude specific files.
+# See https://godoc.org/github.com/gobwas/glob#Glob for the glob pattern syntax.
+# If non-empty, the pattern is matched against the local path.
+# All paths are matched against in their filepath.ToSlash form.
+# If exclude is non-empty, and a local or remote file's path matches it, that file is not synced.
+# If include is non-empty, and a local or remote file's path does not match it, that file is not synced.
+# As a result, local files that don't pass the include/exclude filters are not uploaded to remote,
+# and remote files that don't pass the include/exclude filters are not deleted.
+# include = "**.html" # would only include files with ".html" suffix
+# exclude = "**.{jpg, png}" # would exclude files with ".jpg" or ".png" suffix
+
+
+# [[deployment.matchers]] configure behavior for files that match the Pattern.
+# Samples:
+
+[[deployment.matchers]]
+#  Cache static assets for 1 year.
+pattern = "^.+\\.(js|css|svg|ttf)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = true
+
+[[deployment.matchers]]
+pattern = "^.+\\.(png|jpg)$"
+cacheControl = "max-age=31536000, no-transform, public"
+gzip = false
+
+[[deployment.matchers]]
+pattern = "^.+\\.(html|xml|json)$"
+gzip = true

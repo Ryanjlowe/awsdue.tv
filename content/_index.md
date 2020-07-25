@@ -1,12 +1,37 @@
 +++
-title = "Amazon Pinpoint Workshop"
+title = "Amazon Web Services Digital User Engagement TV"
 chapter = true
 +++
 
-# Amazon Pinpoint Workshop
+# AWS Digital User Engagement TV
 
-### Build a multichannel customer engagement solution using Amazon Pinpoint
+### Up and running with multi-channel messaging using Amazon Pinpoint
+{{< vimeo 425292545 >}}
 
-In this workshop you will create a project with multiple channels in Amazon Pinpoint, and create journeys to guide your customers through workflows to achieve desired outcomes.
+Learn how to get up and running using Amazon Pinpoint without a developer to send messages.  
+This video covers:
+* Enabling the Messaging Channels
+* Sending Transactional Messages via API
+* Creation of Messaging Templates
+* Importing Segments
+* Creation of Filtered Segments
+* Create and Execute a Campaign
+* Create and Execute a Journey
 
-![Diagram: Amazon Pinpoint with Journeys](https://d1.awsstatic.com/product-marketing/Pinpoint/Product-page-diagram_Amazon-Pinpoint-with-Journeys-@2x.59f755aedb4ea26ddbdeade13529046129c3d7a1.png)
+----------------
+
+### Amazon Pinpoint Patterns
+{{< vimeo 439092328 >}}
+
+Learn how to extend Amazon Pinpoint's core functionality with AWS Machine Learning, Analytics, and Mobile services using Reference Architectures.
+This video covers:
+* End-user Identities
+* External Engagement Events
+* Advanced Segmentation
+* Custom Content Personalization
+* Analytics & Reporting
+* 3 Real world examples
+
+[Reference Architectures in GitHub](https://github.com/aws-samples/digital-user-engagement-reference-architectures)
+
+[Amazon Pinpoint AWS Solutions](https://aws.amazon.com/solutions/implementations/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&solutions-all.q=pinpoint&solutions-all.q_operator=AND)
