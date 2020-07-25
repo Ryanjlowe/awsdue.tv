@@ -1,6 +1,6 @@
-# Amazon Pinpoint Workshop
+# AWS DUE TV
 
-AWS Workshop tutorial to learn how to engage with your customers by using Amazon Pinpoint.
+AWS DUE Video Collection
 
 ## Developer guide
 
@@ -10,7 +10,7 @@ This workshop is built with markdown as a static HTML site using [Hugo](http://g
 
 The theme is referenced as a [git-submodule](https://git-scm.com/docs/git-submodule).
 
-`git clone --recurse-submodules git@github.com:aws-samples/amazon-pinpoint-workshop.git`
+`git clone --recurse-submodules git@github.com:Ryanjlowe/awsdue.tv.git`
 
 #### Install and run Hugo
 
@@ -50,7 +50,7 @@ A copy of the License is located at
 
     http://www.apache.org/licenses/LICENSE-2.0
 
-or in the "license" file accompanying this file. This file is distributed 
-on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either 
-express or implied. See the License for the specific language governing 
+or in the "license" file accompanying this file. This file is distributed
+on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
+express or implied. See the License for the specific language governing
 permissions and limitations under the License.
