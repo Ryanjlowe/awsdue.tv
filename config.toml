@@ -102,10 +102,29 @@ url = "https://docs.aws.amazon.com/ses/"
 weight = 90
 
 [[menu.shortcuts]]
+name = "&nbsp; <i class='fas fa-fw fa-bookmark'></i> Developer Guide"
+identifier = "developerguide ses"
+url = "https://docs.aws.amazon.com/ses/latest/DeveloperGuide/index.html"
+weight = 100
+
+[[menu.shortcuts]]
+name = "&nbsp; <i class='fas fa-fw fa-bookmark'></i> REST API Reference"
+identifier = "apireference sesapi"
+url = "https://docs.aws.amazon.com/ses/latest/APIReference/index.html"
+weight = 110
+
+[[menu.shortcuts]]
+name = "&nbsp; <i class='fas fa-fw fa-bookmark'></i> v2 REST API Reference"
+identifier = "apireference sesv2"
+url = "https://docs.aws.amazon.com/ses/latest/APIReference-V2/index.html"
+weight = 120
+
+
+[[menu.shortcuts]]
 name = "<i class='fab fa-twitter fa-lg'></i> @awscloud"
 identifier = "twitter"
 url = "https://twitter.com/intent/user?screen_name=awscloud"
-weight = 100
+weight = 200
 
 
 [deployment]
