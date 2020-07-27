@@ -46,6 +46,12 @@ url = "https://aws.amazon.com/pinpoint/"
 weight = 10
 
 [[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-home'></i> Amazon SES"
+identifier = "homepage ses"
+url = "https://aws.amazon.com/ses/"
+weight = 11
+
+[[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-file-code'></i> Reference Architectures"
 identifier = "reference architectures"
 url = "https://github.com/aws-samples/digital-user-engagement-reference-architectures"
@@ -91,7 +97,7 @@ weight = 80
 
 [[menu.shortcuts]]
 name = "<i class='fas fa-fw fa-book'></i> SES Documentation"
-identifier = "documentation"
+identifier = "documentation ses"
 url = "https://docs.aws.amazon.com/ses/"
 weight = 90
 
