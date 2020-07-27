@@ -52,15 +52,15 @@ url = "https://aws.amazon.com/ses/"
 weight = 11
 
 [[menu.shortcuts]]
-name = "<i class='fas fa-fw fa-file-code'></i> Reference Architectures"
-identifier = "reference architectures"
-url = "https://github.com/aws-samples/digital-user-engagement-reference-architectures"
-weight = 20
-
-[[menu.shortcuts]]
 name = "<i class='fab fa-fw fa-codepen'></i> AWS Solutions"
 identifier = "aws solutions"
 url = "https://aws.amazon.com/solutions/implementations/?solutions-all.sort-by=item.additionalFields.sortDate&solutions-all.sort-order=desc&solutions-all.q=pinpoint&solutions-all.q_operator=AND"
+weight = 20
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-file-code'></i> Reference Architectures"
+identifier = "reference architectures"
+url = "https://github.com/aws-samples/digital-user-engagement-reference-architectures"
 weight = 30
 
 
